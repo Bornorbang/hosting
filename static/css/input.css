@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles for Hosting Nigeria */
+@layer base {
+  /* Global text size reductions */
+  p {
+    @apply text-sm;
+  }
+  
+  /* Override common text size classes to be smaller */
+  .text-base {
+    @apply text-sm;
+  }
+  
+  /* Reduce CTA and link text sizes */
+  a {
+    @apply text-sm;
+  }
+  
+  /* Reduce list items and menu items */
+  li {
+    @apply text-sm;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary-600 hover:bg-primary-700 text-white font-semibold py-2 px-6 rounded-lg transition duration-300 ease-in-out;
+  }
+  
+  .btn-secondary {
+    @apply bg-secondary-400 hover:bg-secondary-500 text-white font-semibold py-2 px-6 rounded-lg transition duration-300 ease-in-out;
+  }
+  
+  .card {
+    @apply bg-white rounded-lg shadow-md p-6 border border-gray-200;
+  }
+  
+  .hero-gradient {
+    @apply bg-gradient-to-br from-primary-600 via-primary-700 to-secondary-400;
+  }
+}
+
+/* Custom animations */
+@keyframes bounce-slow {
+  0%, 100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+.animate-bounce-slow {
+  animation: bounce-slow 2s infinite;
+}

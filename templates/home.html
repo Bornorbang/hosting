@@ -1,0 +1,654 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Hosting Nigeria - Professional Web Hosting Solutions{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white">
+    <!-- Horizontal Border -->
+    <div class="h-1 bg-gradient-to-r from-primary-600 to-secondary-400"></div>
+    
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <!-- Text Content (Left) -->
+            <div class="text-left">
+                <h1 class="text-3xl md:text-4xl lg:text-5xl font-sans font-bold mb-6 leading-tight">
+                    Reliable Web Hosting<br>
+                    <span class="text-primary-400">Built for Nigeria</span>
+                </h1>
+                <p class="text-sm text-gray-300 mb-8 leading-relaxed">
+                    Experience lightning-fast performance, rock-solid security, and 24/7 expert support. 
+                    Your <span class="text-primary-400 font-semibold">Nigerian business</span> deserves the best hosting foundation.
+                </p>
+                
+                <!-- Domain Search -->
+                <div class="mb-12">
+                    <div class="flex flex-col sm:flex-row gap-2 max-w-2xl">
+                        <div class="flex-1">
+                            <input 
+                                type="text" 
+                                placeholder="Enter your domain name..." 
+                                class="w-full px-4 py-3 text-gray-900 rounded-lg border-2 border-gray-300 focus:border-primary-500 focus:outline-none text-base"
+                            >
+                        </div>
+                        <button class="bg-primary-600 hover:bg-primary-700 text-white font-semibold py-3 px-6 rounded-lg transition duration-300 text-sm whitespace-nowrap">
+                            Search Domain
+                        </button>
+                    </div>
+                    
+                    <!-- Popular TLDs with Prices -->
+                    <div class="mt-4 text-sm text-gray-400">
+                        <span class="mr-4"><span class="text-white font-medium">.com</span> - ₦15,000</span>
+                        <span class="mr-4"><span class="text-white font-medium">.ng</span> - ₦8,000</span>
+                        <span class="mr-4"><span class="text-white font-medium">.com.ng</span> - ₦5,000</span>
+                        <span class="mr-4"><span class="text-white font-medium">.org</span> - ₦18,000</span>
+                        <span><span class="text-white font-medium">.net</span> - ₦16,000</span>
+                    </div>
+                </div>
+                
+                <!-- Rating -->
+                <div class="flex flex-col lg:flex-row lg:items-center justify-start lg:justify-start">
+                    <div class="flex items-center justify-start lg:justify-start space-x-1 mb-2 lg:mb-0 lg:mr-4">
+                        <!-- Five Stars -->
+                        <svg class="w-5 h-5 text-secondary-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                        <svg class="w-5 h-5 text-secondary-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                        <svg class="w-5 h-5 text-secondary-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                        <svg class="w-5 h-5 text-secondary-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                        <svg class="w-5 h-5 text-secondary-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                    </div>
+                    <p class="text-gray-300 text-sm text-left lg:text-left">
+                        Rated the best web hosting company in Nigeria 2025
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Hero Image (Right) -->
+            <div class="relative hidden lg:block -mt-24">
+                <div class="relative">
+                    <!-- Hero Image -->
+                    <img src="{% static 'images/hero-hosting.png' %}" alt="Hosting Nigeria - Web Hosting Services" class="w-full h-auto rounded-2xl">
+                    
+                    <!-- Floating Elements -->
+                    <!-- Lightning Fast Servers - Left Side -->
+                    <div class="absolute top-1/4 left-0 transform -translate-y-1/2 bg-secondary-400 rounded-lg px-4 py-3 shadow-lg animate-bounce-slow">
+                        <div class="flex items-center space-x-2 text-white">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                            </svg>
+                            <span class="text-sm font-semibold whitespace-nowrap">Lightning Fast Servers</span>
+                        </div>
+                    </div>
+                    
+                    <!-- 99.9% Uptime - Bottom Right -->
+                    <div class="absolute bottom-4 right-0 bg-primary-600 rounded-lg px-4 py-3 shadow-lg animate-bounce-slow" style="animation-delay: 0.5s;">
+                        <div class="flex items-center space-x-2 text-white">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                            </svg>
+                            <span class="text-sm font-semibold whitespace-nowrap">99.9% Uptime</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-2xl md:text-3xl font-sans font-bold text-gray-900 mb-4">
+                Why Choose Hosting Nigeria?
+            </h2>
+            <p class="text-sm text-gray-600 max-w-3xl mx-auto">
+                We provide everything you need to build, manage, and grow your online presence in Nigeria with confidence.
+            </p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Feature 1 -->
+            <div class="card text-center group hover:shadow-lg transition duration-300">
+                <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary-200 transition duration-300">
+                    <svg class="w-8 h-8 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-900 mb-4">99.9% Uptime on Secure Servers</h3>
+                <p class="text-sm text-gray-600">
+                    Rock-solid reliability with enterprise-grade servers and guaranteed 99.9% uptime backed by our SLA.
+                </p>
+            </div>
+            
+            <!-- Feature 2 -->
+            <div class="card text-center group hover:shadow-lg transition duration-300">
+                <div class="w-16 h-16 bg-secondary-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-secondary-200 transition duration-300">
+                    <svg class="w-8 h-8 text-secondary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4"></path>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-900 mb-4">1-Click Installer</h3>
+                <p class="text-sm text-gray-600">
+                    Install WordPress, Joomla, Drupal and 400+ applications instantly with our simple one-click installer.
+                </p>
+            </div>
+            
+            <!-- Feature 3 -->
+            <div class="card text-center group hover:shadow-lg transition duration-300">
+                <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary-200 transition duration-300">
+                    <svg class="w-8 h-8 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-900 mb-4">Protection, Security and Backups</h3>
+                <p class="text-sm text-gray-600">
+                    Complete security suite with SSL certificates, malware protection, DDoS defense, and automated daily backups.
+                </p>
+            </div>
+            
+            <!-- Feature 4 -->
+            <div class="card text-center group hover:shadow-lg transition duration-300">
+                <div class="w-16 h-16 bg-secondary-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-secondary-200 transition duration-300">
+                    <svg class="w-8 h-8 text-secondary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-900 mb-4">Unlimited High Performance</h3>
+                <p class="text-sm text-gray-600">
+                    Unlimited bandwidth, storage, and email accounts with lightning-fast SSD storage and optimized performance.
+                </p>
+            </div>
+            
+            <!-- Feature 5 -->
+            <div class="card text-center group hover:shadow-lg transition duration-300">
+                <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary-200 transition duration-300">
+                    <svg class="w-8 h-8 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-900 mb-4">Award-Winning Support</h3>
+                <p class="text-sm text-gray-600">
+                    24/7 expert support from our Nigerian technical team via phone, live chat, and email. Always here to help.
+                </p>
+            </div>
+            
+            <!-- Feature 6 -->
+            <div class="card text-center group hover:shadow-lg transition duration-300">
+                <div class="w-16 h-16 bg-secondary-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-secondary-200 transition duration-300">
+                    <svg class="w-8 h-8 text-secondary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17V7m0 10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2m0 10a2 2 0 002 2h2a2 2 0 002-2M9 7a2 2 0 012-2h2a2 2 0 012 2m0 10V7m0 10a2 2 0 002 2h2a2 2 0 002-2V7a2 2 0 00-2-2h-2a2 2 0 00-2 2"></path>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-900 mb-4">Custom Control Panel</h3>
+                <p class="text-sm text-gray-600">
+                    User-friendly control panel designed for Nigerians with intuitive interface and powerful management tools.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Hosting Types Section -->
+<section class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-2xl md:text-3xl font-sans font-bold text-gray-900 mb-4">
+                Our Hosting Solutions
+            </h2>
+            <p class="text-sm text-gray-600 max-w-3xl mx-auto">
+                Choose from our comprehensive range of hosting services designed to meet every business need, from startups to enterprise solutions.
+            </p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Web Hosting -->
+            <div class="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition duration-300 relative">
+                <div class="absolute top-4 right-4">
+                    <span class="bg-green-100 text-green-800 text-xs font-semibold px-2 py-1 rounded-full">Recommended</span>
+                </div>
+                <div class="mb-6">
+                    <img src="{% static 'images/hosting_icon01.svg' %}" alt="Web Hosting" class="h-16 w-16 mx-auto mb-4">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-2">Web Hosting</h3>
+                    <p class="text-primary-600 font-medium mb-4">Best for Small Business</p>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Web hosting providers deliver fast, secure, and reliable hosting solutions for websites, email, and online businesses.
+                    </p>
+                </div>
+                <div class="space-y-3">
+                    <a href="{% url 'web_hosting' %}" class="block w-full bg-primary-600 hover:bg-primary-700 text-white font-semibold py-3 px-6 rounded-lg transition duration-300 text-center">
+                        See Pricing
+                    </a>
+                </div>
+            </div>
+
+            <!-- WordPress Hosting -->
+            <div class="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition duration-300">
+                <div class="mb-6">
+                    <img src="{% static 'images/hosting_icon02.svg' %}" alt="WordPress Hosting" class="h-16 w-16 mx-auto mb-4">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-2">WordPress Hosting</h3>
+                    <p class="text-primary-600 font-medium mb-4">Best for Newbies or Starter</p>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        WordPress hosting providers offer optimized, secure, and high-performance hosting solutions for seamless website management and growth.
+                    </p>
+                </div>
+                <div class="space-y-3">
+                    <button class="w-full bg-primary-600 hover:bg-primary-700 text-white font-semibold py-3 px-6 rounded-lg transition duration-300">
+                        See Pricing
+                    </button>
+                </div>
+            </div>
+
+            <!-- Cloud Hosting -->
+            <div class="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition duration-300">
+                <div class="mb-6">
+                    <img src="{% static 'images/hosting_icon03.svg' %}" alt="Cloud Hosting" class="h-16 w-16 mx-auto mb-4">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-2">Cloud Hosting</h3>
+                    <p class="text-primary-600 font-medium mb-4">Best for Startup</p>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Cloud hosting service providers offer scalable, secure, and high-performance hosting solutions for websites, applications, and businesses.
+                    </p>
+                </div>
+                <div class="space-y-3">
+                    <button class="w-full bg-primary-600 hover:bg-primary-700 text-white font-semibold py-3 px-6 rounded-lg transition duration-300">
+                        See Pricing
+                    </button>
+                </div>
+            </div>
+
+            <!-- Shared Hosting -->
+            <div class="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition duration-300 relative">
+                <div class="absolute top-4 right-4">
+                    <span class="bg-orange-100 text-orange-800 text-xs font-semibold px-2 py-1 rounded-full">Most Popular</span>
+                </div>
+                <div class="mb-6">
+                    <img src="{% static 'images/hosting_icon04.svg' %}" alt="Shared Hosting" class="h-16 w-16 mx-auto mb-4">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-2">Shared Hosting</h3>
+                    <p class="text-primary-600 font-medium mb-4">Best for Large Business</p>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Shared hosting service providers offer affordable, reliable, and secure hosting solutions for websites with shared server resources.
+                    </p>
+                </div>
+                <div class="space-y-3">
+                    <button class="w-full bg-primary-600 hover:bg-primary-700 text-white font-semibold py-3 px-6 rounded-lg transition duration-300">
+                        See Pricing
+                    </button>
+                </div>
+            </div>
+
+            <!-- VPS Hosting -->
+            <div class="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition duration-300">
+                <div class="mb-6">
+                    <img src="{% static 'images/hosting_icon05.svg' %}" alt="VPS Hosting" class="h-16 w-16 mx-auto mb-4">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-2">VPS Hosting</h3>
+                    <p class="text-primary-600 font-medium mb-4">Best for Enterprise</p>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        VPS hosting service providers offer scalable, secure, and high-performance hosting solutions for websites, applications, and businesses.
+                    </p>
+                </div>
+                <div class="space-y-3">
+                    <button class="w-full bg-primary-600 hover:bg-primary-700 text-white font-semibold py-3 px-6 rounded-lg transition duration-300">
+                        See Pricing
+                    </button>
+                </div>
+            </div>
+
+            <!-- Dedicated Hosting -->
+            <div class="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition duration-300">
+                <div class="mb-6">
+                    <img src="{% static 'images/hosting_icon06.svg' %}" alt="Dedicated Hosting" class="h-16 w-16 mx-auto mb-4">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-2">Dedicated Hosting</h3>
+                    <p class="text-primary-600 font-medium mb-4">Best for Small Business</p>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Dedicated hosting service providers offer scalable, secure, and high-performance hosting solutions for websites, applications, and businesses.
+                    </p>
+                </div>
+                <div class="space-y-3">
+                    <button class="w-full bg-primary-600 hover:bg-primary-700 text-white font-semibold py-3 px-6 rounded-lg transition duration-300">
+                        See Pricing
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="py-20 bg-gradient-to-br from-gray-50 to-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <div class="flex justify-center mb-4">
+                <div class="flex space-x-1">
+                    <svg class="w-6 h-6 text-secondary-400" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                    </svg>
+                    <svg class="w-6 h-6 text-secondary-400" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                    </svg>
+                    <svg class="w-6 h-6 text-secondary-400" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                    </svg>
+                    <svg class="w-6 h-6 text-secondary-400" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                    </svg>
+                    <svg class="w-6 h-6 text-secondary-400" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                    </svg>
+                </div>
+            </div>
+            <h2 class="text-2xl md:text-3xl font-sans font-bold text-gray-900 mb-4">
+                Trusted by Thousands of Nigerian Businesses
+            </h2>
+            <p class="text-sm text-gray-600 max-w-3xl mx-auto">
+                Don't just take our word for it. Here's what our customers say about their experience with Hosting Nigeria.
+            </p>
+        </div>
+
+        <!-- Testimonials Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+            <!-- Testimonial 1 -->
+            <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition duration-300 relative">
+                <div class="absolute -top-4 left-8">
+                    <div class="bg-primary-600 text-white rounded-full p-3">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h4v10h-10z"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="pt-8">
+                    <div class="flex mb-4">
+                        <div class="flex space-x-1">
+                            <svg class="w-4 h-4 text-secondary-400" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                            <svg class="w-4 h-4 text-secondary-400" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                            <svg class="w-4 h-4 text-secondary-400" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                            <svg class="w-4 h-4 text-secondary-400" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                            <svg class="w-4 h-4 text-secondary-400" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <p class="text-sm text-gray-600 mb-6 leading-relaxed">
+                        "Hosting Nigeria transformed our e-commerce business. The speed and reliability are outstanding. Our website loads instantly, and we've had zero downtime in 18 months. Their Nigerian support team understands our market perfectly."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-gradient-to-br from-primary-500 to-secondary-400 rounded-full flex items-center justify-center text-white font-bold text-lg mr-4">
+                            A
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-900">Adunni Okafor</h4>
+                            <p class="text-sm text-gray-500">CEO, Lagos Fashion House</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition duration-300 relative">
+                <div class="absolute -top-4 left-8">
+                    <div class="bg-secondary-400 text-white rounded-full p-3">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h4v10h-10z"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="pt-8">
+                    <div class="flex mb-4">
+                        <div class="flex space-x-1">
+                            <svg class="w-4 h-4 text-secondary-400" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                            <svg class="w-4 h-4 text-secondary-400" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                            <svg class="w-4 h-4 text-secondary-400" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                            <svg class="w-4 h-4 text-secondary-400" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                            <svg class="w-4 h-4 text-secondary-400" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <p class="text-sm text-gray-600 mb-6 leading-relaxed">
+                        "As a tech startup, uptime is everything for us. Hosting Nigeria's cloud hosting has been rock solid. Plus, their one-click WordPress installer saved us hours of setup time. Excellent value for money!"
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-gradient-to-br from-secondary-400 to-primary-500 rounded-full flex items-center justify-center text-white font-bold text-lg mr-4">
+                            C
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-900">Chike Nwankwo</h4>
+                            <p class="text-sm text-gray-500">Founder, Abuja Tech Solutions</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition duration-300 relative">
+                <div class="absolute -top-4 left-8">
+                    <div class="bg-gray-800 text-white rounded-full p-3">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h4v10h-10z"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="pt-8">
+                    <div class="flex mb-4">
+                        <div class="flex space-x-1">
+                            <svg class="w-4 h-4 text-secondary-400" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                            <svg class="w-4 h-4 text-secondary-400" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                            <svg class="w-4 h-4 text-secondary-400" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                            <svg class="w-4 h-4 text-secondary-400" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                            <svg class="w-4 h-4 text-secondary-400" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <p class="text-sm text-gray-600 mb-6 leading-relaxed">
+                        "Their customer support is phenomenal! When we had an issue at 2 AM, they responded within minutes and resolved it quickly. It's rare to find such dedicated support in Nigeria. Highly recommended!"
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-gradient-to-br from-gray-600 to-gray-800 rounded-full flex items-center justify-center text-white font-bold text-lg mr-4">
+                            F
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-900">Fatima Abdullahi</h4>
+                            <p class="text-sm text-gray-500">Director, Kano Online Store</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Hosting Plans Section -->
+<section id="plans" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-2xl md:text-3xl font-sans font-bold text-gray-900 mb-4">
+                Choose Your Perfect Plan
+            </h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                From personal blogs to enterprise applications, we have the right hosting solution for every need.
+            </p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Starter Plan -->
+            <div class="card bg-white hover:shadow-xl transition duration-300">
+                <div class="text-center mb-6">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-2">Starter</h3>
+                    <div class="text-4xl font-bold text-gray-900 mb-2">
+                        ₦5,000<span class="text-lg font-normal text-gray-500">/month</span>
+                    </div>
+                    <p class="text-sm text-gray-600">Perfect for personal websites</p>
+                </div>
+                
+                <ul class="space-y-4 mb-8">
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        10 GB SSD Storage
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        1 Website
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        Free SSL Certificate
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        24/7 Email Support
+                    </li>
+                </ul>
+                
+                <button class="btn-secondary w-full">Get Started</button>
+            </div>
+            
+            <!-- Professional Plan (Featured) -->
+            <div class="card bg-primary-600 text-white hover:shadow-xl transition duration-300 relative">
+                <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                    <span class="bg-secondary-400 text-white px-4 py-1 rounded-full text-sm font-semibold">Most Popular</span>
+                </div>
+                
+                <div class="text-center mb-6">
+                    <h3 class="text-2xl font-semibold mb-2">Professional</h3>
+                    <div class="text-4xl font-bold mb-2">
+                        ₦15,000<span class="text-lg font-normal text-primary-200">/month</span>
+                    </div>
+                    <p class="text-primary-200">Ideal for growing businesses</p>
+                </div>
+                
+                <ul class="space-y-4 mb-8">
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 text-secondary-200 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        100 GB SSD Storage
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 text-secondary-200 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        Unlimited Websites
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 text-secondary-200 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        Free SSL & CDN
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 text-secondary-200 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        24/7 Live Chat Support
+                    </li>
+                </ul>
+                
+                <button class="bg-white text-primary-600 hover:bg-gray-100 font-semibold py-2 px-6 rounded-lg transition duration-300 w-full">Get Started</button>
+            </div>
+            
+            <!-- Enterprise Plan -->
+            <div class="card bg-white hover:shadow-xl transition duration-300">
+                <div class="text-center mb-6">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-2">Enterprise</h3>
+                    <div class="text-4xl font-bold text-gray-900 mb-2">
+                        ₦30,000<span class="text-lg font-normal text-gray-500">/month</span>
+                    </div>
+                    <p class="text-sm text-gray-600">For high-traffic websites</p>
+                </div>
+                
+                <ul class="space-y-4 mb-8">
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        500 GB SSD Storage
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        Unlimited Everything
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        Premium SSL & CDN
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        Priority Phone Support
+                    </li>
+                </ul>
+                
+                <button class="btn-secondary w-full">Get Started</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="py-12 bg-primary-600 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-xl md:text-2xl font-sans font-bold mb-4">
+            Ready to Get Started?
+        </h2>
+        <p class="text-sm text-primary-100 mb-6 max-w-3xl mx-auto">
+            Join thousands of satisfied Nigerian customers who trust Hosting Nigeria for their web hosting needs.
+            Get your website online in minutes with our easy setup process.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="#" class="bg-white text-primary-600 hover:bg-primary-50 font-semibold py-4 px-8 rounded-lg transition duration-300 inline-flex items-center justify-center text-sm">
+                Start Your Free Trial
+            </a>
+            <a href="#" class="border border-white text-white hover:bg-white hover:text-primary-600 font-semibold py-4 px-8 rounded-lg transition duration-300 inline-flex items-center justify-center text-sm">
+                Contact Sales
+            </a>
+        </div>
+    </div>
+</section>
+{% endblock %}

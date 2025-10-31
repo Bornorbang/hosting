@@ -1,0 +1,22 @@
+{
+  "name": "hosting-nigeria",
+  "version": "1.0.0",
+  "description": "A modern hosting company website for Nigeria built with Django and Tailwind CSS",
+  "scripts": {
+    "build-css": "tailwindcss -i ./static/css/input.css -o ./static/css/output.css --watch",
+    "build-css-prod": "tailwindcss -i ./static/css/input.css -o ./static/css/output.css --minify",
+    "dev": "tailwindcss -i ./static/css/input.css -o ./static/css/output.css --watch"
+  },
+  "keywords": [
+    "hosting-nigeria",
+    "web-hosting",
+    "nigeria-hosting",
+    "django",
+    "tailwindcss"
+  ],
+  "author": "Hosting Nigeria",
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^3.3.0"
+  }
+}
