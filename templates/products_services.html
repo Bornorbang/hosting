@@ -1,0 +1,473 @@
+{% extends 'main.html' %}
+{% load static %}
+
+{% block title %}My Products & Services - Manage Your Hosting Services{% endblock %}
+{% block description %}View and manage all your hosting products and services including domains, hosting plans, SSL certificates, and more.{% endblock %}
+
+{% block content %}
+<div class="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Page Header - Full Width -->
+        <div class="mb-8">
+            <h1 class="text-2xl lg:text-3xl font-bold text-gray-900">My Products & Services</h1>
+            <!-- Breadcrumb -->
+            <nav class="flex mt-3" aria-label="Breadcrumb">
+                <ol class="inline-flex items-center space-x-1 md:space-x-3">
+                    <li class="inline-flex items-center">
+                        <a href="{% url 'home' %}" class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-primary-600 transition duration-200">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <div class="flex items-center">
+                            <svg class="w-3 h-3 text-gray-400 mx-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                            </svg>
+                            <a href="{% url 'dashboard' %}" class="ml-1 text-sm font-medium text-gray-700 hover:text-primary-600 transition duration-200 md:ml-2">Dashboard</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="flex items-center">
+                            <svg class="w-3 h-3 text-gray-400 mx-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                            </svg>
+                            <span class="ml-1 text-sm font-medium text-gray-500 md:ml-2">Products & Services</span>
+                        </div>
+                    </li>
+                </ol>
+            </nav>
+        </div>
+
+        <!-- Page Layout - Two Columns -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+            <!-- Left Sidebar (3 columns) - ALWAYS 3 columns on desktop -->
+            <div class="col-span-1 lg:col-span-3 order-2 lg:order-1">
+                <!-- Quick Actions Card -->
+                <div class="bg-white rounded-xl shadow-lg p-6 mb-6 border border-gray-200 hover:shadow-xl transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="w-3 h-3 bg-gradient-to-r from-primary-500 to-secondary-500 rounded-full mr-3"></div>
+                        <h2 class="text-lg font-semibold text-gray-900">Quick Actions</h2>
+                    </div>
+                    
+                    <div class="space-y-2">
+                        <!-- Service Management -->
+                        <div class="border-b border-gray-200 pb-3 mb-3">
+                            <h3 class="text-sm font-medium text-gray-700 mb-2">Service Management</h3>
+                            <div class="space-y-1">
+                                <a href="#" class="block text-sm text-primary-600 hover:text-primary-800 transition duration-200">
+                                    Add New Service
+                                </a>
+                                <a href="#" class="block text-sm text-primary-600 hover:text-primary-800 transition duration-200">
+                                    Upgrade Service
+                                </a>
+                                <a href="#" class="block text-sm text-primary-600 hover:text-primary-800 transition duration-200">
+                                    Renew Services
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Domain Management -->
+                        <div class="border-b border-gray-200 pb-3 mb-3">
+                            <h3 class="text-sm font-medium text-gray-700 mb-2">Domains</h3>
+                            <div class="space-y-1">
+                                <a href="{% url 'register_domain' %}" class="block text-sm text-primary-600 hover:text-primary-800 transition duration-200">
+                                    Register New Domain
+                                </a>
+                                <a href="{% url 'transfer_domain' %}" class="block text-sm text-primary-600 hover:text-primary-800 transition duration-200">
+                                    Transfer Domain
+                                </a>
+                                <a href="#" class="block text-sm text-primary-600 hover:text-primary-800 transition duration-200">
+                                    Manage DNS
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Hosting Management -->
+                        <div class="border-b border-gray-200 pb-3 mb-3">
+                            <h3 class="text-sm font-medium text-gray-700 mb-2">Hosting</h3>
+                            <div class="space-y-1">
+                                <a href="{% url 'web_hosting' %}" class="block text-sm text-primary-600 hover:text-primary-800 transition duration-200">
+                                    Order New Hosting
+                                </a>
+                                <a href="#" class="block text-sm text-primary-600 hover:text-primary-800 transition duration-200">
+                                    File Manager
+                                </a>
+                                <a href="#" class="block text-sm text-primary-600 hover:text-primary-800 transition duration-200">
+                                    Backup Manager
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- SSL & Security -->
+                        <div>
+                            <h3 class="text-sm font-medium text-gray-700 mb-2">SSL & Security</h3>
+                            <div class="space-y-1">
+                                <a href="{% url 'ssl_certificates' %}" class="block text-sm text-primary-600 hover:text-primary-800 transition duration-200">
+                                    Order SSL Certificate
+                                </a>
+                                <a href="#" class="block text-sm text-primary-600 hover:text-primary-800 transition duration-200">
+                                    Install SSL
+                                </a>
+                                <a href="#" class="block text-sm text-primary-600 hover:text-primary-800 transition duration-200">
+                                    Security Scan
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Filter Options Card -->
+                <div class="bg-white rounded-xl shadow-lg p-6 border border-gray-200 hover:shadow-xl transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="w-3 h-3 bg-gradient-to-r from-secondary-500 to-primary-500 rounded-full mr-3"></div>
+                        <h2 class="text-lg font-semibold text-gray-900">Filter & Sort</h2>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <!-- Service Type Filter -->
+                        <div>
+                            <label for="service_type" class="block text-sm font-medium text-gray-700 mb-2">Service Type</label>
+                            <select id="service_type" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500 text-sm">
+                                <option value="">All Services</option>
+                                <option value="hosting">Web Hosting</option>
+                                <option value="domain">Domains</option>
+                                <option value="ssl">SSL Certificates</option>
+                                <option value="email">Email Services</option>
+                            </select>
+                        </div>
+
+                        <!-- Status Filter -->
+                        <div>
+                            <label for="status_filter" class="block text-sm font-medium text-gray-700 mb-2">Status</label>
+                            <select id="status_filter" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500 text-sm">
+                                <option value="">All Status</option>
+                                <option value="active">Active</option>
+                                <option value="pending">Pending</option>
+                                <option value="suspended">Suspended</option>
+                                <option value="expired">Expired</option>
+                            </select>
+                        </div>
+
+                        <!-- Apply Filters Button -->
+                        <button class="w-full bg-primary-600 hover:bg-primary-700 text-white py-2 px-4 rounded-lg font-medium transition duration-200 text-sm shadow-md">
+                            Apply Filters
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Main Content (9 columns) - ALWAYS 9 columns on desktop -->
+            <div class="col-span-1 lg:col-span-9 order-1 lg:order-2">
+                <!-- Services Overview Cards -->
+                <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+                    <!-- Total Services -->
+                    <div class="bg-white rounded-xl shadow-lg p-6 text-center border border-gray-200 hover:shadow-xl transition duration-300">
+                        <div class="text-2xl font-bold text-green-600 mb-2">12</div>
+                        <div class="text-sm font-medium text-black">Total Services</div>
+                        <div class="w-8 h-1 bg-purple-500 rounded-full mx-auto mt-2"></div>
+                    </div>
+
+                    <!-- Active Services -->
+                    <div class="bg-white rounded-xl shadow-lg p-6 text-center border border-gray-200 hover:shadow-xl transition duration-300">
+                        <div class="text-2xl font-bold text-green-600 mb-2">10</div>
+                        <div class="text-sm font-medium text-black">Active</div>
+                        <div class="w-8 h-1 bg-purple-500 rounded-full mx-auto mt-2"></div>
+                    </div>
+
+                    <!-- Expiring Soon -->
+                    <div class="bg-white rounded-xl shadow-lg p-6 text-center border border-gray-200 hover:shadow-xl transition duration-300">
+                        <div class="text-2xl font-bold text-orange-600 mb-2">3</div>
+                        <div class="text-sm font-medium text-black">Expiring Soon</div>
+                        <div class="w-8 h-1 bg-purple-500 rounded-full mx-auto mt-2"></div>
+                    </div>
+
+                    <!-- Suspended -->
+                    <div class="bg-white rounded-xl shadow-lg p-6 text-center border border-gray-200 hover:shadow-xl transition duration-300">
+                        <div class="text-2xl font-bold text-red-600 mb-2">2</div>
+                        <div class="text-sm font-medium text-black">Suspended</div>
+                        <div class="w-8 h-1 bg-purple-500 rounded-full mx-auto mt-2"></div>
+                    </div>
+                </div>
+
+                <!-- Products & Services Table -->
+                <div class="bg-white rounded-xl shadow-lg p-4 lg:p-6 border border-gray-200 hover:shadow-xl transition duration-300">
+                    <div class="flex flex-col space-y-4 sm:flex-row sm:items-center sm:justify-between sm:space-y-0 mb-6">
+                        <div class="flex items-center">
+                            <div class="w-3 h-3 bg-gradient-to-r from-primary-500 to-secondary-500 rounded-full mr-3"></div>
+                            <h2 class="text-xl font-semibold text-gray-900">All Products & Services</h2>
+                        </div>
+                        <div class="flex flex-col space-y-2 sm:flex-row sm:space-y-0 sm:space-x-2">
+                            <button class="w-full sm:w-auto px-4 py-2 bg-primary-600 hover:bg-primary-700 text-white rounded-lg font-medium transition duration-200 text-sm">
+                                Export List
+                            </button>
+                            <button class="w-full sm:w-auto px-4 py-2 bg-secondary-600 hover:bg-secondary-700 text-white rounded-lg font-medium transition duration-200 text-sm">
+                                Add Service
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Services Table -->
+                    <div class="overflow-x-auto">
+                        <table class="min-w-full divide-y divide-gray-200">
+                            <thead class="bg-gray-50">
+                                <tr>
+                                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Service Details</th>
+                                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Status</th>
+                                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Next Due Date</th>
+                                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Price</th>
+                                    <th class="px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody class="bg-white divide-y divide-gray-200">
+                                <!-- Service 1 -->
+                                <tr class="hover:bg-gray-50">
+                                    <td class="px-6 py-4 whitespace-nowrap">
+                                        <div>
+                                            <div class="text-sm font-medium text-gray-900">Shared Hosting - Premium</div>
+                                            <div class="text-sm text-gray-500">example.com.ng</div>
+                                        </div>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap">
+                                        <span class="inline-flex px-2 py-1 text-xs font-semibold rounded-full bg-green-100 text-green-800">
+                                            Active
+                                        </span>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                                        Dec 15, 2025
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap">
+                                        <div class="text-sm text-gray-900">₦25,000</div>
+                                        <div class="text-xs text-gray-500">annually</div>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-center">
+                                        <div class="relative inline-block text-left">
+                                            <button type="button" class="p-2 rounded-full hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-primary-500" onclick="toggleDropdown('dropdown1')">
+                                                <svg class="w-5 h-5 text-gray-500" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path d="M10 6a2 2 0 110-4 2 2 0 010 4zM10 12a2 2 0 110-4 2 2 0 010 4zM10 18a2 2 0 110-4 2 2 0 010 4z"></path>
+                                                </svg>
+                                            </button>
+                                            <div id="dropdown1" class="hidden origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 z-10">
+                                                <div class="py-1">
+                                                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Manage Service</a>
+                                                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Renew Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <!-- Service 2 -->
+                                <tr class="hover:bg-gray-50">
+                                    <td class="px-6 py-4 whitespace-nowrap">
+                                        <div>
+                                            <div class="text-sm font-medium text-gray-900">Domain Registration</div>
+                                            <div class="text-sm text-gray-500">mybusiness.com.ng</div>
+                                        </div>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap">
+                                        <span class="inline-flex px-2 py-1 text-xs font-semibold rounded-full bg-green-100 text-green-800">
+                                            Active
+                                        </span>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                                        Jan 8, 2026
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap">
+                                        <div class="text-sm text-gray-900">₦8,000</div>
+                                        <div class="text-xs text-gray-500">annually</div>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-center">
+                                        <div class="relative inline-block text-left">
+                                            <button type="button" class="p-2 rounded-full hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-primary-500" onclick="toggleDropdown('dropdown2')">
+                                                <svg class="w-5 h-5 text-gray-500" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path d="M10 6a2 2 0 110-4 2 2 0 010 4zM10 12a2 2 0 110-4 2 2 0 010 4zM10 18a2 2 0 110-4 2 2 0 010 4z"></path>
+                                                </svg>
+                                            </button>
+                                            <div id="dropdown2" class="hidden origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 z-10">
+                                                <div class="py-1">
+                                                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Manage Domain</a>
+                                                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Renew Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <!-- Service 3 -->
+                                <tr class="hover:bg-gray-50">
+                                    <td class="px-6 py-4 whitespace-nowrap">
+                                        <div>
+                                            <div class="text-sm font-medium text-gray-900">SSL Certificate</div>
+                                            <div class="text-sm text-gray-500">example.com.ng</div>
+                                        </div>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap">
+                                        <span class="inline-flex px-2 py-1 text-xs font-semibold rounded-full bg-yellow-100 text-yellow-800">
+                                            Expiring Soon
+                                        </span>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                                        Nov 20, 2025
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap">
+                                        <div class="text-sm text-gray-900">₦15,000</div>
+                                        <div class="text-xs text-gray-500">annually</div>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-center">
+                                        <div class="relative inline-block text-left">
+                                            <button type="button" class="p-2 rounded-full hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-primary-500" onclick="toggleDropdown('dropdown3')">
+                                                <svg class="w-5 h-5 text-gray-500" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path d="M10 6a2 2 0 110-4 2 2 0 010 4zM10 12a2 2 0 110-4 2 2 0 010 4zM10 18a2 2 0 110-4 2 2 0 010 4z"></path>
+                                                </svg>
+                                            </button>
+                                            <div id="dropdown3" class="hidden origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 z-10">
+                                                <div class="py-1">
+                                                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Manage SSL</a>
+                                                    <a href="#" class="block px-4 py-2 text-sm text-orange-600 hover:bg-gray-100">Renew Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <!-- Service 4 -->
+                                <tr class="hover:bg-gray-50">
+                                    <td class="px-6 py-4 whitespace-nowrap">
+                                        <div>
+                                            <div class="text-sm font-medium text-gray-900">Email Hosting</div>
+                                            <div class="text-sm text-gray-500">mybusiness.com.ng</div>
+                                        </div>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap">
+                                        <span class="inline-flex px-2 py-1 text-xs font-semibold rounded-full bg-green-100 text-green-800">
+                                            Active
+                                        </span>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                                        Mar 15, 2026
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap">
+                                        <div class="text-sm text-gray-900">₦12,000</div>
+                                        <div class="text-xs text-gray-500">annually</div>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-center">
+                                        <div class="relative inline-block text-left">
+                                            <button type="button" class="p-2 rounded-full hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-primary-500" onclick="toggleDropdown('dropdown4')">
+                                                <svg class="w-5 h-5 text-gray-500" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path d="M10 6a2 2 0 110-4 2 2 0 010 4zM10 12a2 2 0 110-4 2 2 0 010 4zM10 18a2 2 0 110-4 2 2 0 010 4z"></path>
+                                                </svg>
+                                            </button>
+                                            <div id="dropdown4" class="hidden origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 z-10">
+                                                <div class="py-1">
+                                                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Manage Email</a>
+                                                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Renew Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <!-- Service 5 -->
+                                <tr class="hover:bg-gray-50">
+                                    <td class="px-6 py-4 whitespace-nowrap">
+                                        <div>
+                                            <div class="text-sm font-medium text-gray-900">VPS Hosting</div>
+                                            <div class="text-sm text-gray-500">server1.example.com</div>
+                                        </div>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap">
+                                        <span class="inline-flex px-2 py-1 text-xs font-semibold rounded-full bg-red-100 text-red-800">
+                                            Suspended
+                                        </span>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                                        Oct 30, 2025 (Overdue)
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap">
+                                        <div class="text-sm text-gray-900">₦45,000</div>
+                                        <div class="text-xs text-gray-500">annually</div>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-center">
+                                        <div class="relative inline-block text-left">
+                                            <button type="button" class="p-2 rounded-full hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-primary-500" onclick="toggleDropdown('dropdown5')">
+                                                <svg class="w-5 h-5 text-gray-500" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path d="M10 6a2 2 0 110-4 2 2 0 010 4zM10 12a2 2 0 110-4 2 2 0 010 4zM10 18a2 2 0 110-4 2 2 0 010 4z"></path>
+                                                </svg>
+                                            </button>
+                                            <div id="dropdown5" class="hidden origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 z-10">
+                                                <div class="py-1">
+                                                    <a href="#" class="block px-4 py-2 text-sm text-red-600 hover:bg-gray-100">Pay Now</a>
+                                                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">View Details</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="mt-6 flex items-center justify-between">
+                        <div class="text-sm text-gray-700">
+                            Showing <span class="font-medium">1</span> to <span class="font-medium">5</span> of <span class="font-medium">12</span> results
+                        </div>
+                        <div class="flex space-x-2">
+                            <button class="px-3 py-2 text-sm bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 transition duration-200">
+                                Previous
+                            </button>
+                            <button class="px-3 py-2 text-sm bg-primary-600 text-white rounded-lg hover:bg-primary-700 transition duration-200">
+                                1
+                            </button>
+                            <button class="px-3 py-2 text-sm bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 transition duration-200">
+                                2
+                            </button>
+                            <button class="px-3 py-2 text-sm bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 transition duration-200">
+                                Next
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- JavaScript for dropdown functionality -->
+<script>
+function toggleDropdown(dropdownId) {
+    // Close all other dropdowns first
+    const allDropdowns = document.querySelectorAll('[id^="dropdown"]');
+    allDropdowns.forEach(dropdown => {
+        if (dropdown.id !== dropdownId) {
+            dropdown.classList.add('hidden');
+        }
+    });
+    
+    // Toggle the clicked dropdown
+    const dropdown = document.getElementById(dropdownId);
+    dropdown.classList.toggle('hidden');
+}
+
+// Close dropdowns when clicking outside
+document.addEventListener('click', function(event) {
+    const dropdowns = document.querySelectorAll('[id^="dropdown"]');
+    let clickedInsideDropdown = false;
+    
+    // Check if click was inside any dropdown or its button
+    dropdowns.forEach(dropdown => {
+        const button = dropdown.previousElementSibling;
+        if (dropdown.contains(event.target) || button.contains(event.target)) {
+            clickedInsideDropdown = true;
+        }
+    });
+    
+    // If click was outside all dropdowns, close them
+    if (!clickedInsideDropdown) {
+        dropdowns.forEach(dropdown => {
+            dropdown.classList.add('hidden');
+        });
+    }
+});
+</script>
+{% endblock %}

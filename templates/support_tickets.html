@@ -1,0 +1,598 @@
+{% extends 'main.html' %}
+{% load static %}
+
+{% block title %}Support Tickets - Manage Your Support Requests{% endblock %}
+{% block description %}View and manage all your support tickets including technical issues, billing questions, and service requests.{% endblock %}
+
+{% block content %}
+<div class="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Page Header - Full Width -->
+        <div class="mb-8">
+            <h1 class="text-2xl lg:text-3xl font-bold text-gray-900">Support Tickets</h1>
+            <!-- Breadcrumb -->
+            <nav class="flex mt-3" aria-label="Breadcrumb">
+                <ol class="inline-flex items-center space-x-1 md:space-x-3">
+                    <li class="inline-flex items-center">
+                        <a href="{% url 'home' %}" class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-primary-600 transition duration-200">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <div class="flex items-center">
+                            <svg class="w-3 h-3 text-gray-400 mx-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                            </svg>
+                            <a href="{% url 'dashboard' %}" class="ml-1 text-sm font-medium text-gray-700 hover:text-primary-600 transition duration-200 md:ml-2">Dashboard</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="flex items-center">
+                            <svg class="w-3 h-3 text-gray-400 mx-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                            </svg>
+                            <span class="ml-1 text-sm font-medium text-gray-500 md:ml-2">Support Tickets</span>
+                        </div>
+                    </li>
+                </ol>
+            </nav>
+        </div>
+
+        <!-- Page Layout - Two Columns -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+            <!-- Left Sidebar (3 columns) - ALWAYS 3 columns on desktop -->
+            <div class="col-span-1 lg:col-span-3 order-2 lg:order-1">
+                <!-- Quick Actions Card -->
+                <div class="bg-white rounded-xl shadow-lg p-6 mb-6 border border-gray-200 hover:shadow-xl transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="w-3 h-3 bg-gradient-to-r from-primary-500 to-secondary-500 rounded-full mr-3"></div>
+                        <h2 class="text-lg font-semibold text-gray-900">Quick Actions</h2>
+                    </div>
+                    
+                    <div class="space-y-2">
+                        <!-- Ticket Creation -->
+                        <div class="border-b border-gray-200 pb-3 mb-3">
+                            <h3 class="text-sm font-medium text-gray-700 mb-2">Create Ticket</h3>
+                            <div class="space-y-1">
+                                <a href="#" class="block text-sm text-primary-600 hover:text-primary-800 transition duration-200">
+                                    New Support Ticket
+                                </a>
+                                <a href="#" class="block text-sm text-primary-600 hover:text-primary-800 transition duration-200">
+                                    Technical Issue
+                                </a>
+                                <a href="#" class="block text-sm text-primary-600 hover:text-primary-800 transition duration-200">
+                                    Billing Question
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Ticket Management -->
+                        <div class="border-b border-gray-200 pb-3 mb-3">
+                            <h3 class="text-sm font-medium text-gray-700 mb-2">Ticket Management</h3>
+                            <div class="space-y-1">
+                                <a href="#" class="block text-sm text-primary-600 hover:text-primary-800 transition duration-200">
+                                    Update Ticket
+                                </a>
+                                <a href="#" class="block text-sm text-primary-600 hover:text-primary-800 transition duration-200">
+                                    Upload Files
+                                </a>
+                                <a href="#" class="block text-sm text-primary-600 hover:text-primary-800 transition duration-200">
+                                    Close Ticket
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Support Resources -->
+                        <div class="border-b border-gray-200 pb-3 mb-3">
+                            <h3 class="text-sm font-medium text-gray-700 mb-2">Support Resources</h3>
+                            <div class="space-y-1">
+                                <a href="{% url 'knowledge_base' %}" class="block text-sm text-primary-600 hover:text-primary-800 transition duration-200">
+                                    Knowledge Base
+                                </a>
+                                <a href="{% url 'help_center' %}" class="block text-sm text-primary-600 hover:text-primary-800 transition duration-200">
+                                    Help Center
+                                </a>
+                                <a href="#" class="block text-sm text-primary-600 hover:text-primary-800 transition duration-200">
+                                    Video Tutorials
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Contact Options -->
+                        <div>
+                            <h3 class="text-sm font-medium text-gray-700 mb-2">Contact Support</h3>
+                            <div class="space-y-1">
+                                <a href="{% url 'contact_us' %}" class="block text-sm text-primary-600 hover:text-primary-800 transition duration-200">
+                                    Live Chat
+                                </a>
+                                <a href="#" class="block text-sm text-primary-600 hover:text-primary-800 transition duration-200">
+                                    Phone Support
+                                </a>
+                                <a href="#" class="block text-sm text-primary-600 hover:text-primary-800 transition duration-200">
+                                    Email Support
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Filter Options Card -->
+                <div class="bg-white rounded-xl shadow-lg p-6 border border-gray-200 hover:shadow-xl transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="w-3 h-3 bg-gradient-to-r from-secondary-500 to-primary-500 rounded-full mr-3"></div>
+                        <h2 class="text-lg font-semibold text-gray-900">Filter & Sort</h2>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <!-- Status Filter -->
+                        <div>
+                            <label for="status_filter" class="block text-sm font-medium text-gray-700 mb-2">Status</label>
+                            <select id="status_filter" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500 text-sm">
+                                <option value="">All Status</option>
+                                <option value="open">Open</option>
+                                <option value="in-progress">In Progress</option>
+                                <option value="pending">Pending</option>
+                                <option value="resolved">Resolved</option>
+                                <option value="closed">Closed</option>
+                            </select>
+                        </div>
+
+                        <!-- Department Filter -->
+                        <div>
+                            <label for="department_filter" class="block text-sm font-medium text-gray-700 mb-2">Department</label>
+                            <select id="department_filter" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500 text-sm">
+                                <option value="">All Departments</option>
+                                <option value="technical">Technical Support</option>
+                                <option value="billing">Billing</option>
+                                <option value="sales">Sales</option>
+                                <option value="general">General Support</option>
+                            </select>
+                        </div>
+
+                        <!-- Urgency Filter -->
+                        <div>
+                            <label for="urgency_filter" class="block text-sm font-medium text-gray-700 mb-2">Urgency</label>
+                            <select id="urgency_filter" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500 text-sm">
+                                <option value="">All Urgency</option>
+                                <option value="low">Low</option>
+                                <option value="medium">Medium</option>
+                                <option value="high">High</option>
+                                <option value="critical">Critical</option>
+                            </select>
+                        </div>
+
+                        <!-- Apply Filters Button -->
+                        <button class="w-full bg-primary-600 hover:bg-primary-700 text-white py-2 px-4 rounded-lg font-medium transition duration-200 text-sm shadow-md">
+                            Apply Filters
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Main Content (9 columns) - ALWAYS 9 columns on desktop -->
+            <div class="col-span-1 lg:col-span-9 order-1 lg:order-2">
+                <!-- Ticket Overview Cards -->
+                <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+                    <!-- Total Tickets -->
+                    <div class="bg-white rounded-xl shadow-lg p-6 text-center border border-gray-200 hover:shadow-xl transition duration-300">
+                        <div class="text-2xl font-bold text-green-600 mb-2">15</div>
+                        <div class="text-sm font-medium text-black">Total Tickets</div>
+                        <div class="w-8 h-1 bg-purple-500 rounded-full mx-auto mt-2"></div>
+                    </div>
+
+                    <!-- Open Tickets -->
+                    <div class="bg-white rounded-xl shadow-lg p-6 text-center border border-gray-200 hover:shadow-xl transition duration-300">
+                        <div class="text-2xl font-bold text-orange-600 mb-2">4</div>
+                        <div class="text-sm font-medium text-black">Open</div>
+                        <div class="w-8 h-1 bg-purple-500 rounded-full mx-auto mt-2"></div>
+                    </div>
+
+                    <!-- In Progress -->
+                    <div class="bg-white rounded-xl shadow-lg p-6 text-center border border-gray-200 hover:shadow-xl transition duration-300">
+                        <div class="text-2xl font-bold text-blue-600 mb-2">2</div>
+                        <div class="text-sm font-medium text-black">In Progress</div>
+                        <div class="w-8 h-1 bg-purple-500 rounded-full mx-auto mt-2"></div>
+                    </div>
+
+                    <!-- Resolved -->
+                    <div class="bg-white rounded-xl shadow-lg p-6 text-center border border-gray-200 hover:shadow-xl transition duration-300">
+                        <div class="text-2xl font-bold text-green-600 mb-2">9</div>
+                        <div class="text-sm font-medium text-black">Resolved</div>
+                        <div class="w-8 h-1 bg-purple-500 rounded-full mx-auto mt-2"></div>
+                    </div>
+                </div>
+
+                <!-- Support Tickets Table -->
+                <div class="bg-white rounded-xl shadow-lg p-4 lg:p-6 border border-gray-200 hover:shadow-xl transition duration-300">
+                    <div class="flex flex-col space-y-4 sm:flex-row sm:items-center sm:justify-between sm:space-y-0 mb-6">
+                        <div class="flex items-center">
+                            <div class="w-3 h-3 bg-gradient-to-r from-primary-500 to-secondary-500 rounded-full mr-3"></div>
+                            <h2 class="text-xl font-semibold text-gray-900">All Support Tickets</h2>
+                        </div>
+                        <div class="flex flex-col space-y-2 sm:flex-row sm:space-y-0 sm:space-x-2">
+                            <button class="w-full sm:w-auto px-4 py-2 bg-primary-600 hover:bg-primary-700 text-white rounded-lg font-medium transition duration-200 text-sm">
+                                Export CSV
+                            </button>
+                            <button class="w-full sm:w-auto px-4 py-2 bg-secondary-600 hover:bg-secondary-700 text-white rounded-lg font-medium transition duration-200 text-sm">
+                                New Ticket
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Support Tickets Table -->
+                    <div class="overflow-x-auto">
+                        <table class="min-w-full divide-y divide-gray-200">
+                            <thead class="bg-gray-50">
+                                <tr>
+                                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Number</th>
+                                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Subject</th>
+                                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Department</th>
+                                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Status</th>
+                                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Urgency</th>
+                                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Submitted</th>
+                                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Last Updated</th>
+                                    <th class="px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody class="bg-white divide-y divide-gray-200">
+                                <!-- Ticket 1 -->
+                                <tr class="hover:bg-gray-50">
+                                    <td class="px-6 py-4 whitespace-nowrap">
+                                        <div class="flex items-center">
+                                            <svg class="w-5 h-5 text-green-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 5v2m0 4v2m0 4v2M5 5a2 2 0 00-2 2v3a2 2 0 110 4v3a2 2 0 002 2h14a2 2 0 002-2v-3a2 2 0 110-4V7a2 2 0 00-2-2H5z"></path>
+                                            </svg>
+                                            <div class="text-sm font-medium text-gray-900">#TKT-2025-001</div>
+                                        </div>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                                        Email hosting configuration issue
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                                        Technical Support
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap">
+                                        <span class="inline-flex px-2 py-1 text-xs font-semibold rounded-full bg-blue-100 text-blue-800">
+                                            In Progress
+                                        </span>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap">
+                                        <span class="inline-flex px-2 py-1 text-xs font-semibold rounded-full bg-yellow-100 text-yellow-800">
+                                            Medium
+                                        </span>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                                        Nov 1, 2025
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                                        Nov 2, 2025
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-center">
+                                        <div class="relative inline-block text-left">
+                                            <button type="button" class="p-2 rounded-full hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-primary-500" onclick="toggleDropdown('dropdown1')">
+                                                <svg class="w-5 h-5 text-gray-500" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path d="M10 6a2 2 0 110-4 2 2 0 010 4zM10 12a2 2 0 110-4 2 2 0 010 4zM10 18a2 2 0 110-4 2 2 0 010 4z"></path>
+                                                </svg>
+                                            </button>
+                                            <div id="dropdown1" class="hidden origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 z-10">
+                                                <div class="py-1">
+                                                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">View Ticket</a>
+                                                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Add Reply</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <!-- Ticket 2 -->
+                                <tr class="hover:bg-gray-50">
+                                    <td class="px-6 py-4 whitespace-nowrap">
+                                        <div class="flex items-center">
+                                            <svg class="w-5 h-5 text-green-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 5v2m0 4v2m0 4v2M5 5a2 2 0 00-2 2v3a2 2 0 110 4v3a2 2 0 002 2h14a2 2 0 002-2v-3a2 2 0 110-4V7a2 2 0 00-2-2H5z"></path>
+                                            </svg>
+                                            <div class="text-sm font-medium text-gray-900">#TKT-2025-002</div>
+                                        </div>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                                        Billing invoice discrepancy
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                                        Billing
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap">
+                                        <span class="inline-flex px-2 py-1 text-xs font-semibold rounded-full bg-green-100 text-green-800">
+                                            Resolved
+                                        </span>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap">
+                                        <span class="inline-flex px-2 py-1 text-xs font-semibold rounded-full bg-green-100 text-green-800">
+                                            Low
+                                        </span>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                                        Oct 28, 2025
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                                        Oct 30, 2025
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-center">
+                                        <div class="relative inline-block text-left">
+                                            <button type="button" class="p-2 rounded-full hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-primary-500" onclick="toggleDropdown('dropdown2')">
+                                                <svg class="w-5 h-5 text-gray-500" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path d="M10 6a2 2 0 110-4 2 2 0 010 4zM10 12a2 2 0 110-4 2 2 0 010 4zM10 18a2 2 0 110-4 2 2 0 010 4z"></path>
+                                                </svg>
+                                            </button>
+                                            <div id="dropdown2" class="hidden origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 z-10">
+                                                <div class="py-1">
+                                                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">View Ticket</a>
+                                                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Close Ticket</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <!-- Ticket 3 -->
+                                <tr class="hover:bg-gray-50">
+                                    <td class="px-6 py-4 whitespace-nowrap">
+                                        <div class="flex items-center">
+                                            <svg class="w-5 h-5 text-green-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 5v2m0 4v2m0 4v2M5 5a2 2 0 00-2 2v3a2 2 0 110 4v3a2 2 0 002 2h14a2 2 0 002-2v-3a2 2 0 110-4V7a2 2 0 00-2-2H5z"></path>
+                                            </svg>
+                                            <div class="text-sm font-medium text-gray-900">#TKT-2025-003</div>
+                                        </div>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                                        Website down - urgent assistance needed
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                                        Technical Support
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap">
+                                        <span class="inline-flex px-2 py-1 text-xs font-semibold rounded-full bg-orange-100 text-orange-800">
+                                            Open
+                                        </span>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap">
+                                        <span class="inline-flex px-2 py-1 text-xs font-semibold rounded-full bg-red-100 text-red-800">
+                                            Critical
+                                        </span>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                                        Nov 2, 2025
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                                        Nov 2, 2025
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-center">
+                                        <div class="relative inline-block text-left">
+                                            <button type="button" class="p-2 rounded-full hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-primary-500" onclick="toggleDropdown('dropdown3')">
+                                                <svg class="w-5 h-5 text-gray-500" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path d="M10 6a2 2 0 110-4 2 2 0 010 4zM10 12a2 2 0 110-4 2 2 0 010 4zM10 18a2 2 0 110-4 2 2 0 010 4z"></path>
+                                                </svg>
+                                            </button>
+                                            <div id="dropdown3" class="hidden origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 z-10">
+                                                <div class="py-1">
+                                                    <a href="#" class="block px-4 py-2 text-sm text-red-600 hover:bg-gray-100">View Urgent</a>
+                                                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Add Reply</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <!-- Ticket 4 -->
+                                <tr class="hover:bg-gray-50">
+                                    <td class="px-6 py-4 whitespace-nowrap">
+                                        <div class="flex items-center">
+                                            <svg class="w-5 h-5 text-green-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 5v2m0 4v2m0 4v2M5 5a2 2 0 00-2 2v3a2 2 0 110 4v3a2 2 0 002 2h14a2 2 0 002-2v-3a2 2 0 110-4V7a2 2 0 00-2-2H5z"></path>
+                                            </svg>
+                                            <div class="text-sm font-medium text-gray-900">#TKT-2025-004</div>
+                                        </div>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                                        Domain transfer assistance
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                                        General Support
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap">
+                                        <span class="inline-flex px-2 py-1 text-xs font-semibold rounded-full bg-yellow-100 text-yellow-800">
+                                            Pending
+                                        </span>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap">
+                                        <span class="inline-flex px-2 py-1 text-xs font-semibold rounded-full bg-yellow-100 text-yellow-800">
+                                            Medium
+                                        </span>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                                        Oct 25, 2025
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                                        Oct 27, 2025
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-center">
+                                        <div class="relative inline-block text-left">
+                                            <button type="button" class="p-2 rounded-full hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-primary-500" onclick="toggleDropdown('dropdown4')">
+                                                <svg class="w-5 h-5 text-gray-500" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path d="M10 6a2 2 0 110-4 2 2 0 010 4zM10 12a2 2 0 110-4 2 2 0 010 4zM10 18a2 2 0 110-4 2 2 0 010 4z"></path>
+                                                </svg>
+                                            </button>
+                                            <div id="dropdown4" class="hidden origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 z-10">
+                                                <div class="py-1">
+                                                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">View Ticket</a>
+                                                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Add Reply</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <!-- Ticket 5 -->
+                                <tr class="hover:bg-gray-50">
+                                    <td class="px-6 py-4 whitespace-nowrap">
+                                        <div class="flex items-center">
+                                            <svg class="w-5 h-5 text-green-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 5v2m0 4v2m0 4v2M5 5a2 2 0 00-2 2v3a2 2 0 110 4v3a2 2 0 002 2h14a2 2 0 002-2v-3a2 2 0 110-4V7a2 2 0 00-2-2H5z"></path>
+                                            </svg>
+                                            <div class="text-sm font-medium text-gray-900">#TKT-2025-005</div>
+                                        </div>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                                        SSL certificate installation
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                                        Technical Support
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap">
+                                        <span class="inline-flex px-2 py-1 text-xs font-semibold rounded-full bg-green-100 text-green-800">
+                                            Resolved
+                                        </span>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap">
+                                        <span class="inline-flex px-2 py-1 text-xs font-semibold rounded-full bg-orange-100 text-orange-800">
+                                            High
+                                        </span>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                                        Oct 20, 2025
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                                        Oct 22, 2025
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-center">
+                                        <div class="relative inline-block text-left">
+                                            <button type="button" class="p-2 rounded-full hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-primary-500" onclick="toggleDropdown('dropdown5')">
+                                                <svg class="w-5 h-5 text-gray-500" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path d="M10 6a2 2 0 110-4 2 2 0 010 4zM10 12a2 2 0 110-4 2 2 0 010 4zM10 18a2 2 0 110-4 2 2 0 010 4z"></path>
+                                                </svg>
+                                            </button>
+                                            <div id="dropdown5" class="hidden origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 z-10">
+                                                <div class="py-1">
+                                                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">View Ticket</a>
+                                                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Close Ticket</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <!-- Ticket 6 -->
+                                <tr class="hover:bg-gray-50">
+                                    <td class="px-6 py-4 whitespace-nowrap">
+                                        <div class="flex items-center">
+                                            <svg class="w-5 h-5 text-green-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 5v2m0 4v2m0 4v2M5 5a2 2 0 00-2 2v3a2 2 0 110 4v3a2 2 0 002 2h14a2 2 0 002-2v-3a2 2 0 110-4V7a2 2 0 00-2-2H5z"></path>
+                                            </svg>
+                                            <div class="text-sm font-medium text-gray-900">#TKT-2025-006</div>
+                                        </div>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                                        Upgrade hosting plan question
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                                        Sales
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap">
+                                        <span class="inline-flex px-2 py-1 text-xs font-semibold rounded-full bg-orange-100 text-orange-800">
+                                            Open
+                                        </span>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap">
+                                        <span class="inline-flex px-2 py-1 text-xs font-semibold rounded-full bg-green-100 text-green-800">
+                                            Low
+                                        </span>
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                                        Oct 18, 2025
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                                        Oct 19, 2025
+                                    </td>
+                                    <td class="px-6 py-4 whitespace-nowrap text-center">
+                                        <div class="relative inline-block text-left">
+                                            <button type="button" class="p-2 rounded-full hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-primary-500" onclick="toggleDropdown('dropdown6')">
+                                                <svg class="w-5 h-5 text-gray-500" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path d="M10 6a2 2 0 110-4 2 2 0 010 4zM10 12a2 2 0 110-4 2 2 0 010 4zM10 18a2 2 0 110-4 2 2 0 010 4z"></path>
+                                                </svg>
+                                            </button>
+                                            <div id="dropdown6" class="hidden origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 z-10">
+                                                <div class="py-1">
+                                                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">View Ticket</a>
+                                                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Add Reply</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="mt-6 flex items-center justify-between">
+                        <div class="text-sm text-gray-700">
+                            Showing <span class="font-medium">1</span> to <span class="font-medium">6</span> of <span class="font-medium">15</span> results
+                        </div>
+                        <div class="flex space-x-2">
+                            <button class="px-3 py-2 text-sm bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 transition duration-200">
+                                Previous
+                            </button>
+                            <button class="px-3 py-2 text-sm bg-primary-600 text-white rounded-lg hover:bg-primary-700 transition duration-200">
+                                1
+                            </button>
+                            <button class="px-3 py-2 text-sm bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 transition duration-200">
+                                2
+                            </button>
+                            <button class="px-3 py-2 text-sm bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 transition duration-200">
+                                Next
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- JavaScript for dropdown functionality -->
+<script>
+function toggleDropdown(dropdownId) {
+    // Close all other dropdowns first
+    const allDropdowns = document.querySelectorAll('[id^="dropdown"]');
+    allDropdowns.forEach(dropdown => {
+        if (dropdown.id !== dropdownId) {
+            dropdown.classList.add('hidden');
+        }
+    });
+    
+    // Toggle the clicked dropdown
+    const dropdown = document.getElementById(dropdownId);
+    dropdown.classList.toggle('hidden');
+}
+
+// Close dropdowns when clicking outside
+document.addEventListener('click', function(event) {
+    const dropdowns = document.querySelectorAll('[id^="dropdown"]');
+    let clickedInsideDropdown = false;
+    
+    // Check if click was inside any dropdown or its button
+    dropdowns.forEach(dropdown => {
+        const button = dropdown.previousElementSibling;
+        if (dropdown.contains(event.target) || button.contains(event.target)) {
+            clickedInsideDropdown = true;
+        }
+    });
+    
+    // If click was outside all dropdowns, close them
+    if (!clickedInsideDropdown) {
+        dropdowns.forEach(dropdown => {
+            dropdown.classList.add('hidden');
+        });
+    }
+});
+</script>
+{% endblock %}

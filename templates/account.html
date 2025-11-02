@@ -1,0 +1,366 @@
+{% extends 'main.html' %}
+
+{% block title %}Account Settings - Hosting Nigeria{% endblock %}
+
+{% block content %}
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <!-- Breadcrumbs -->
+    <nav class="flex mb-6" aria-label="Breadcrumb">
+        <ol class="inline-flex items-center space-x-1 md:space-x-3">
+            <li class="inline-flex items-center">
+                <a href="{% url 'dashboard' %}" class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-primary-600 transition duration-200">
+                    <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
+                    </svg>
+                    Dashboard
+                </a>
+            </li>
+            <li>
+                <div class="flex items-center">
+                    <svg class="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
+                    </svg>
+                    <span class="ml-1 text-sm font-medium text-gray-500 md:ml-2">Account Settings</span>
+                </div>
+            </li>
+        </ol>
+    </nav>
+
+    <!-- Page Header -->
+    <div class="mb-8">
+        <h1 class="text-3xl font-bold text-gray-900">Account Settings</h1>
+        <p class="mt-2 text-gray-600">Manage your account details, security settings, and preferences.</p>
+    </div>
+
+    <!-- Two Column Layout -->
+    <div class="flex flex-col lg:flex-row gap-8">
+        <!-- Right Content Area - Comes First on Mobile -->
+        <div class="lg:w-3/4 lg:order-2">
+            <div x-data="{ activeTab: 'account-details' }">
+                <!-- Account Details Tab -->
+                <div x-show="activeTab === 'account-details'" class="space-y-6">
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200">
+                        <!-- Personal Information -->
+                        <div class="px-6 py-4 border-b border-gray-200">
+                            <h3 class="text-lg font-medium text-gray-900">Personal Information</h3>
+                            <p class="mt-1 text-sm text-gray-600">Update your personal details and contact information.</p>
+                        </div>
+                        <div class="px-6 py-6">
+                            <form class="space-y-6">
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                    <div>
+                                        <label for="first_name" class="block text-sm font-medium text-gray-700">First Name</label>
+                                        <input type="text" id="first_name" name="first_name" value="{{ user.first_name }}" 
+                                               class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary-500 focus:border-primary-500">
+                                    </div>
+                                    <div>
+                                        <label for="last_name" class="block text-sm font-medium text-gray-700">Last Name</label>
+                                        <input type="text" id="last_name" name="last_name" value="{{ user.last_name }}" 
+                                               class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary-500 focus:border-primary-500">
+                                    </div>
+                                </div>
+                                <div>
+                                    <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
+                                    <input type="email" id="email" name="email" value="{{ user.email }}" 
+                                           class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary-500 focus:border-primary-500">
+                                </div>
+                                <div>
+                                    <label for="phone" class="block text-sm font-medium text-gray-700">Phone Number</label>
+                                    <input type="tel" id="phone" name="phone" placeholder="+234 800 000 0000" 
+                                           class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary-500 focus:border-primary-500">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- Billing Address -->
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200">
+                        <div class="px-6 py-4 border-b border-gray-200">
+                            <h3 class="text-lg font-medium text-gray-900">Billing Address</h3>
+                            <p class="mt-1 text-sm text-gray-600">This address will be used for billing and invoicing purposes.</p>
+                        </div>
+                        <div class="px-6 py-6">
+                            <form class="space-y-6">
+                                <div>
+                                    <label for="company" class="block text-sm font-medium text-gray-700">Company (Optional)</label>
+                                    <input type="text" id="company" name="company" 
+                                           class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary-500 focus:border-primary-500">
+                                </div>
+                                <div>
+                                    <label for="address" class="block text-sm font-medium text-gray-700">Street Address</label>
+                                    <input type="text" id="address" name="address" 
+                                           class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary-500 focus:border-primary-500">
+                                </div>
+                                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                                    <div>
+                                        <label for="city" class="block text-sm font-medium text-gray-700">City</label>
+                                        <input type="text" id="city" name="city" 
+                                               class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary-500 focus:border-primary-500">
+                                    </div>
+                                    <div>
+                                        <label for="state" class="block text-sm font-medium text-gray-700">State</label>
+                                        <select id="state" name="state" 
+                                                class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary-500 focus:border-primary-500">
+                                            <option value="">Select State</option>
+                                            <option value="abia">Abia</option>
+                                            <option value="adamawa">Adamawa</option>
+                                            <option value="akwa-ibom">Akwa Ibom</option>
+                                            <option value="anambra">Anambra</option>
+                                            <option value="bauchi">Bauchi</option>
+                                            <option value="bayelsa">Bayelsa</option>
+                                            <option value="benue">Benue</option>
+                                            <option value="borno">Borno</option>
+                                            <option value="cross-river">Cross River</option>
+                                            <option value="delta">Delta</option>
+                                            <option value="ebonyi">Ebonyi</option>
+                                            <option value="edo">Edo</option>
+                                            <option value="ekiti">Ekiti</option>
+                                            <option value="enugu">Enugu</option>
+                                            <option value="fct">FCT - Abuja</option>
+                                            <option value="gombe">Gombe</option>
+                                            <option value="imo">Imo</option>
+                                            <option value="jigawa">Jigawa</option>
+                                            <option value="kaduna">Kaduna</option>
+                                            <option value="kano">Kano</option>
+                                            <option value="katsina">Katsina</option>
+                                            <option value="kebbi">Kebbi</option>
+                                            <option value="kogi">Kogi</option>
+                                            <option value="kwara">Kwara</option>
+                                            <option value="lagos">Lagos</option>
+                                            <option value="nasarawa">Nasarawa</option>
+                                            <option value="niger">Niger</option>
+                                            <option value="ogun">Ogun</option>
+                                            <option value="ondo">Ondo</option>
+                                            <option value="osun">Osun</option>
+                                            <option value="oyo">Oyo</option>
+                                            <option value="plateau">Plateau</option>
+                                            <option value="rivers">Rivers</option>
+                                            <option value="sokoto">Sokoto</option>
+                                            <option value="taraba">Taraba</option>
+                                            <option value="yobe">Yobe</option>
+                                            <option value="zamfara">Zamfara</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <label for="postal_code" class="block text-sm font-medium text-gray-700">Postal Code</label>
+                                        <input type="text" id="postal_code" name="postal_code" 
+                                               class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary-500 focus:border-primary-500">
+                                    </div>
+                                </div>
+                                <div>
+                                    <label for="country" class="block text-sm font-medium text-gray-700">Country</label>
+                                    <select id="country" name="country" 
+                                            class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary-500 focus:border-primary-500">
+                                        <option value="">Select Country</option>
+                                        <option value="nigeria" selected>Nigeria</option>
+                                        
+                                        <!-- African Countries -->
+                                        <optgroup label="Africa">
+                                            <option value="algeria">Algeria</option>
+                                            <option value="angola">Angola</option>
+                                            <option value="benin">Benin</option>
+                                            <option value="botswana">Botswana</option>
+                                            <option value="burkina-faso">Burkina Faso</option>
+                                            <option value="cameroon">Cameroon</option>
+                                            <option value="cape-verde">Cape Verde</option>
+                                            <option value="chad">Chad</option>
+                                            <option value="congo">Congo</option>
+                                            <option value="cote-divoire">Côte d'Ivoire</option>
+                                            <option value="drc">Democratic Republic of Congo</option>
+                                            <option value="egypt">Egypt</option>
+                                            <option value="ethiopia">Ethiopia</option>
+                                            <option value="gabon">Gabon</option>
+                                            <option value="gambia">Gambia</option>
+                                            <option value="ghana">Ghana</option>
+                                            <option value="guinea">Guinea</option>
+                                            <option value="kenya">Kenya</option>
+                                            <option value="liberia">Liberia</option>
+                                            <option value="libya">Libya</option>
+                                            <option value="madagascar">Madagascar</option>
+                                            <option value="malawi">Malawi</option>
+                                            <option value="mali">Mali</option>
+                                            <option value="mauritania">Mauritania</option>
+                                            <option value="mauritius">Mauritius</option>
+                                            <option value="morocco">Morocco</option>
+                                            <option value="mozambique">Mozambique</option>
+                                            <option value="namibia">Namibia</option>
+                                            <option value="niger">Niger</option>
+                                            <option value="rwanda">Rwanda</option>
+                                            <option value="senegal">Senegal</option>
+                                            <option value="sierra-leone">Sierra Leone</option>
+                                            <option value="somalia">Somalia</option>
+                                            <option value="south-africa">South Africa</option>
+                                            <option value="south-sudan">South Sudan</option>
+                                            <option value="sudan">Sudan</option>
+                                            <option value="tanzania">Tanzania</option>
+                                            <option value="togo">Togo</option>
+                                            <option value="tunisia">Tunisia</option>
+                                            <option value="uganda">Uganda</option>
+                                            <option value="zambia">Zambia</option>
+                                            <option value="zimbabwe">Zimbabwe</option>
+                                        </optgroup>
+                                        
+                                        <!-- Popular Global Countries -->
+                                        <optgroup label="North America">
+                                            <option value="canada">Canada</option>
+                                            <option value="mexico">Mexico</option>
+                                            <option value="usa">United States</option>
+                                        </optgroup>
+                                        
+                                        <optgroup label="Europe">
+                                            <option value="belgium">Belgium</option>
+                                            <option value="denmark">Denmark</option>
+                                            <option value="finland">Finland</option>
+                                            <option value="france">France</option>
+                                            <option value="germany">Germany</option>
+                                            <option value="ireland">Ireland</option>
+                                            <option value="italy">Italy</option>
+                                            <option value="netherlands">Netherlands</option>
+                                            <option value="norway">Norway</option>
+                                            <option value="poland">Poland</option>
+                                            <option value="portugal">Portugal</option>
+                                            <option value="spain">Spain</option>
+                                            <option value="sweden">Sweden</option>
+                                            <option value="switzerland">Switzerland</option>
+                                            <option value="uk">United Kingdom</option>
+                                        </optgroup>
+                                        
+                                        <optgroup label="Asia">
+                                            <option value="bangladesh">Bangladesh</option>
+                                            <option value="china">China</option>
+                                            <option value="india">India</option>
+                                            <option value="indonesia">Indonesia</option>
+                                            <option value="japan">Japan</option>
+                                            <option value="malaysia">Malaysia</option>
+                                            <option value="pakistan">Pakistan</option>
+                                            <option value="philippines">Philippines</option>
+                                            <option value="singapore">Singapore</option>
+                                            <option value="south-korea">South Korea</option>
+                                            <option value="sri-lanka">Sri Lanka</option>
+                                            <option value="thailand">Thailand</option>
+                                            <option value="uae">United Arab Emirates</option>
+                                            <option value="vietnam">Vietnam</option>
+                                        </optgroup>
+                                        
+                                        <optgroup label="Middle East">
+                                            <option value="bahrain">Bahrain</option>
+                                            <option value="iran">Iran</option>
+                                            <option value="iraq">Iraq</option>
+                                            <option value="israel">Israel</option>
+                                            <option value="jordan">Jordan</option>
+                                            <option value="kuwait">Kuwait</option>
+                                            <option value="lebanon">Lebanon</option>
+                                            <option value="oman">Oman</option>
+                                            <option value="qatar">Qatar</option>
+                                            <option value="saudi-arabia">Saudi Arabia</option>
+                                            <option value="syria">Syria</option>
+                                            <option value="turkey">Turkey</option>
+                                            <option value="yemen">Yemen</option>
+                                        </optgroup>
+                                        
+                                        <optgroup label="Oceania">
+                                            <option value="australia">Australia</option>
+                                            <option value="fiji">Fiji</option>
+                                            <option value="new-zealand">New Zealand</option>
+                                            <option value="papua-new-guinea">Papua New Guinea</option>
+                                        </optgroup>
+                                        
+                                        <optgroup label="South America">
+                                            <option value="argentina">Argentina</option>
+                                            <option value="bolivia">Bolivia</option>
+                                            <option value="brazil">Brazil</option>
+                                            <option value="chile">Chile</option>
+                                            <option value="colombia">Colombia</option>
+                                            <option value="ecuador">Ecuador</option>
+                                            <option value="guyana">Guyana</option>
+                                            <option value="paraguay">Paraguay</option>
+                                            <option value="peru">Peru</option>
+                                            <option value="suriname">Suriname</option>
+                                            <option value="uruguay">Uruguay</option>
+                                            <option value="venezuela">Venezuela</option>
+                                        </optgroup>
+                                    </select>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="flex justify-end space-x-4">
+                        <button type="button" class="px-6 py-2 border border-gray-300 rounded-md text-sm font-medium text-gray-700 hover:bg-gray-50 transition duration-300">
+                            Cancel Changes
+                        </button>
+                        <button type="submit" class="px-6 py-2 bg-primary-600 border border-transparent rounded-md text-sm font-medium text-white hover:bg-primary-700 transition duration-300">
+                            Save Changes
+                        </button>
+                    </div>
+                </div>
+
+                <!-- User Management Tab -->
+                <div x-show="activeTab === 'user-management'" style="display: none;" class="space-y-6">
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200">
+                        <div class="px-6 py-4 border-b border-gray-200">
+                            <h3 class="text-lg font-medium text-gray-900">User Management</h3>
+                            <p class="mt-1 text-sm text-gray-600">Manage additional users and their permissions for your account.</p>
+                        </div>
+                        <div class="px-6 py-6">
+                            <div class="text-center py-12">
+                                <svg class="mx-auto h-12 w-12 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m13.5-9a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z"></path>
+                                </svg>
+                                <h3 class="mt-2 text-sm font-medium text-gray-900">No additional users</h3>
+                                <p class="mt-1 text-sm text-gray-500">Get started by adding a new user to your account.</p>
+                                <div class="mt-6">
+                                    <button type="button" class="inline-flex items-center px-4 py-2 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-primary-600 hover:bg-primary-700">
+                                        <svg class="-ml-1 mr-2 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                                        </svg>
+                                        Add User
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Left Sidebar - Comes After Content on Mobile -->
+        <div class="lg:w-1/4 lg:order-1">
+            <div class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden">
+                <div class="px-4 py-3 bg-gray-50 border-b border-gray-200">
+                    <h3 class="text-sm font-semibold text-gray-900 uppercase tracking-wide">Account</h3>
+                </div>
+                <nav class="space-y-1" x-data="{ activeTab: 'account-details' }">
+                    <a href="#" @click.prevent="activeTab = 'account-details'" 
+                       :class="activeTab === 'account-details' ? 'bg-primary-50 border-r-4 border-primary-500 text-primary-700' : 'text-gray-600 hover:bg-gray-50'"
+                       class="flex items-center px-4 py-3 text-sm font-medium transition duration-200">
+                        <svg class="w-4 h-4 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                        </svg>
+                        Account Details
+                    </a>
+                    <a href="{% url 'user_management' %}" class="flex items-center px-4 py-3 text-sm font-medium text-gray-600 hover:bg-gray-50 transition duration-200">
+                        <svg class="w-4 h-4 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m13.5-9a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z"></path>
+                        </svg>
+                        User Management
+                    </a>
+                    <a href="{% url 'account_security' %}" class="flex items-center px-4 py-3 text-sm font-medium text-gray-600 hover:bg-gray-50 transition duration-200">
+                        <svg class="w-4 h-4 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                        </svg>
+                        Account Security
+                    </a>
+                    <a href="{% url 'email_history' %}" class="flex items-center px-4 py-3 text-sm font-medium text-gray-600 hover:bg-gray-50 transition duration-200">
+                        <svg class="w-4 h-4 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                        </svg>
+                        Email History
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

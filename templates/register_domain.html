@@ -1,0 +1,522 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Register Domain - Premium Domain Names in Nigeria{% endblock %}
+{% block description %}Register your perfect domain name with Nigeria's leading domain registrar. .com, .ng, .com.ng and more available with instant setup.{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white">
+    <!-- Horizontal Border -->
+    <div class="h-1 bg-gradient-to-r from-primary-600 to-secondary-400"></div>
+    
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <div class="max-w-7xl mx-auto text-center">
+            <!-- Centered Content -->
+            <div>
+                <!-- Subtitle -->
+                <p class="text-primary-400 font-semibold text-sm uppercase tracking-wide mb-4">
+                    Nigeria's Premier Domain Registrar
+                </p>
+                
+                <h1 class="text-3xl md:text-4xl lg:text-5xl font-sans font-bold mb-6 leading-tight">
+                    Register Your Perfect<br>
+                    <span class="text-primary-400">Domain Name</span>
+                </h1>
+                <p class="text-sm text-gray-300 mb-8 leading-relaxed max-w-4xl mx-auto">
+                    Secure your brand online with premium domain names. Choose from .com, .ng, .com.ng and 500+ other extensions. 
+                    <span class="text-primary-400 font-semibold">Fast registration</span>, competitive prices, and full Nigerian support.
+                </p>
+                
+                <!-- Domain Search -->
+                <div class="mb-12">
+                    <div class="flex flex-col sm:flex-row gap-2 max-w-4xl mx-auto">
+                        <div class="flex-1">
+                            <input 
+                                type="text" 
+                                placeholder="Enter your domain name..." 
+                                class="w-full px-4 py-3 text-gray-900 rounded-lg border-2 border-gray-300 focus:border-primary-500 focus:outline-none text-base"
+                                id="domain-search"
+                            >
+                        </div>
+                        <button class="bg-primary-600 hover:bg-primary-700 text-white font-semibold py-3 px-6 rounded-lg transition duration-300 text-sm whitespace-nowrap">
+                            Search Domain
+                        </button>
+                    </div>
+                    
+                    <!-- Popular TLDs with Prices -->
+                    <div class="mt-4 text-sm text-gray-400">
+                        <span class="mr-4"><span class="text-white font-medium">.com</span> - ₦12,500</span>
+                        <span class="mr-4"><span class="text-white font-medium">.ng</span> - ₦8,500</span>
+                        <span class="mr-4"><span class="text-white font-medium">.com.ng</span> - ₦6,000</span>
+                        <span class="mr-4"><span class="text-white font-medium">.org</span> - ₦11,000</span>
+                        <span><span class="text-white font-medium">.net</span> - ₦13,500</span>
+                    </div>
+                </div>
+                
+                <!-- Call to Action -->
+                <div class="text-center">
+                    <p class="text-gray-300 text-sm">
+                        Already own a domain? <a href="{% url 'transfer_domain' %}" class="text-primary-400 hover:text-primary-300 font-semibold underline transition duration-200">Transfer it!</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Cheapest Renewal Section -->
+<section class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Centered Header Above Both Columns -->
+        <div class="text-center mb-12">
+            <div class="inline-flex items-center bg-green-100 text-green-800 rounded-full px-4 py-2 text-sm font-semibold mb-4">
+                <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.293l-3-3a1 1 0 00-1.414 1.414L10.586 9.5 9.293 10.793a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z" clip-rule="evenodd"></path>
+                </svg>
+                Best Value Guarantee
+            </div>
+            <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+                Cheapest Renewal for <span class="text-primary-600">.com.ng</span> Domains
+            </h2>
+            <p class="text-sm text-gray-600 leading-relaxed max-w-3xl mx-auto">
+                Don't get caught by expensive renewal fees. We offer the most competitive .com.ng renewal rates in Nigeria with transparent pricing and no hidden costs.
+            </p>
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-12">
+            <!-- Left Column - Content -->
+            <div class="space-y-6">
+                <!-- Key Benefits -->
+                <div class="space-y-4">
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 w-8 h-8 bg-green-100 rounded-full flex items-center justify-center mt-1">
+                            <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <div class="ml-6">
+                            <h4 class="font-medium text-gray-900 mb-1">No Price Surprises</h4>
+                            <p class="text-gray-600 text-sm">Lock in your renewal rate for up to 5 years and never worry about sudden price increases.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 w-8 h-8 bg-green-100 rounded-full flex items-center justify-center mt-1">
+                            <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
+                            </svg>
+                        </div>
+                        <div class="ml-6">
+                            <h4 class="font-medium text-gray-900 mb-1">Automatic Renewal Protection</h4>
+                            <p class="text-gray-600 text-sm">Never lose your domain due to missed renewals. Our smart system keeps your domain active automatically.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 w-8 h-8 bg-green-100 rounded-full flex items-center justify-center mt-1">
+                            <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+                            </svg>
+                        </div>
+                        <div class="ml-6">
+                            <h4 class="font-medium text-gray-900 mb-1">Nigerian Customer Support</h4>
+                            <p class="text-gray-600 text-sm">Get help from our local experts who understand your business needs and speak your language.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CTA Button -->
+                <div class="pt-4">
+                    <a href="#domain-search" class="w-full bg-primary-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-primary-700 transition duration-300 inline-flex items-center justify-center smooth-scroll group">
+                        Register Your .com.ng Domain Today
+                        <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Column - Image -->
+            <div class="lg:block">
+                <div class="relative">
+                    <img src="{% static 'images/register-domain.webp' %}" 
+                         alt="Register Domain Illustration" 
+                         class="w-full h-auto rounded-2xl shadow-lg">
+                    
+                    <!-- Floating Badge -->
+                    <div class="absolute -top-4 -right-4 bg-primary-600 text-white rounded-lg shadow-lg p-4 transform rotate-6">
+                        <div class="text-center">
+                            <div class="text-sm font-medium">Best Price</div>
+                            <div class="text-lg font-bold">₦7,000</div>
+                            <div class="text-xs opacity-90">per year</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</section>
+
+<!-- Why Choose Our Domains -->
+<section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">
+                Why Choose Our Domain Services?
+            </h2>
+            <p class="text-gray-600 max-w-2xl mx-auto">
+                We provide everything you need to establish your online presence with professional domain management tools.
+            </p>
+        </div>
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Easy Management -->
+            <div class="text-center">
+                <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4"></path>
+                    </svg>
+                </div>
+                <h3 class="text-lg font-semibold text-gray-900 mb-2">Easy Management</h3>
+                <p class="text-gray-600 text-sm">
+                    Intuitive control panel to manage DNS, subdomains, redirects, and all domain settings with ease.
+                </p>
+            </div>
+
+            <!-- Free Privacy Protection -->
+            <div class="text-center">
+                <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                    </svg>
+                </div>
+                <h3 class="text-lg font-semibold text-gray-900 mb-2">Free Privacy Protection</h3>
+                <p class="text-gray-600 text-sm">
+                    Keep your personal information private with free WHOIS privacy protection included with every domain.
+                </p>
+            </div>
+
+            <!-- 24/7 Support -->
+            <div class="text-center">
+                <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192L5.636 18.364M12 2.25a9.75 9.75 0 11-9.75 9.75 9.75 9.75 0 019.75-9.75z"></path>
+                    </svg>
+                </div>
+                <h3 class="text-lg font-semibold text-gray-900 mb-2">24/7 Nigerian Support</h3>
+                <p class="text-gray-600 text-sm">
+                    Get help when you need it from our local Nigerian support team available around the clock.
+                </p>
+            </div>
+
+            <!-- Fast Setup -->
+            <div class="text-center">
+                <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <svg class="w-8 h-8 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                    </svg>
+                </div>
+                <h3 class="text-lg font-semibold text-gray-900 mb-2">Instant Activation</h3>
+                <p class="text-gray-600 text-sm">
+                    Most domains activate immediately after registration. Start using your domain right away.
+                </p>
+            </div>
+
+            <!-- Free DNS -->
+            <div class="text-center">
+                <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <svg class="w-8 h-8 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                </div>
+                <h3 class="text-lg font-semibold text-gray-900 mb-2">Free DNS Management</h3>
+                <p class="text-gray-600 text-sm">
+                    Advanced DNS management tools included free. Set up A records, CNAME, MX records, and more.
+                </p>
+            </div>
+
+            <!-- Easy Transfer -->
+            <div class="text-center">
+                <div class="w-16 h-16 bg-teal-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <svg class="w-8 h-8 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"></path>
+                    </svg>
+                </div>
+                <h3 class="text-lg font-semibold text-gray-900 mb-2">Easy Domain Transfer</h3>
+                <p class="text-gray-600 text-sm">
+                    Moving from another registrar? We'll handle the transfer process free of charge with no downtime.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Domain FAQ -->
+<section class="py-16 bg-gray-50">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">
+                Frequently Asked Questions
+            </h2>
+            <p class="text-gray-600">
+                Common questions about domain registration and management
+            </p>
+        </div>
+        
+        <div class="space-y-6">
+            <!-- FAQ Item 1 -->
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <h3 class="text-lg font-semibold text-gray-900 mb-2">What is a domain name?</h3>
+                <p class="text-gray-600 text-sm">
+                    A domain name is your website's address on the internet (like hostingnigeria.com). It's what people type into their browser to visit your website. Think of it as your digital address that makes your website accessible to everyone online.
+                </p>
+            </div>
+
+            <!-- FAQ Item 2 -->
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <h3 class="text-lg font-semibold text-gray-900 mb-2">Which domain extension should I choose?</h3>
+                <p class="text-gray-600 text-sm">
+                    For Nigerian businesses, we recommend .com.ng or .ng for local credibility, or .com for global reach. .com is the most recognized worldwide, while .ng shows you're a Nigerian business. Choose based on your target audience and business goals.
+                </p>
+            </div>
+
+            <!-- FAQ Item 3 -->
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <h3 class="text-lg font-semibold text-gray-900 mb-2">Can I transfer my existing domain to you?</h3>
+                <p class="text-gray-600 text-sm">
+                    Yes! We offer free domain transfers with no downtime. The process typically takes 5-7 days and we'll guide you through every step. You'll also get an additional year added to your domain registration when you transfer.
+                </p>
+            </div>
+
+            <!-- FAQ Item 4 -->
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <h3 class="text-lg font-semibold text-gray-900 mb-2">Do I need hosting to register a domain?</h3>
+                <p class="text-gray-600 text-sm">
+                    No, you can register a domain without hosting. However, to have a working website, you'll need both a domain and hosting. We offer discounted hosting when you register a domain with us, making it convenient to get everything in one place.
+                </p>
+            </div>
+
+            <!-- FAQ Item 5 -->
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <h3 class="text-lg font-semibold text-gray-900 mb-2">What payment methods do you accept?</h3>
+                <p class="text-gray-600 text-sm">
+                    We accept all major Nigerian payment methods including bank transfers, Paystack, Flutterwave, and major credit/debit cards. All payments are processed securely and you'll receive instant confirmation.
+                </p>
+            </div>
+
+            <!-- FAQ Item 6 -->
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <h3 class="text-lg font-semibold text-gray-900 mb-2">What happens if my domain expires?</h3>
+                <p class="text-gray-600 text-sm">
+                    We'll send multiple renewal reminders before expiration. After expiry, you have a 30-day grace period to renew at regular price, followed by a 30-day redemption period (with additional fees). Don't worry - we'll help you avoid any issues.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Domain Pricing Table Section -->
+<section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Section Header -->
+        <div class="text-center mb-12">
+            <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+                Domain registration, renewal and transfer prices
+            </h2>
+            <p class="text-gray-600 max-w-3xl mx-auto">
+                Transparent pricing for all domain extensions. No hidden fees or surprise charges.
+            </p>
+        </div>
+
+        <!-- Pricing Table -->
+        <div class="overflow-x-auto">
+            <table class="w-full bg-white rounded-lg shadow-lg overflow-hidden">
+                <thead class="bg-primary-600 text-white">
+                    <tr>
+                        <th class="px-6 py-4 text-left font-semibold">Domain Extension</th>
+                        <th class="px-6 py-4 text-left font-semibold">Category</th>
+                        <th class="px-6 py-4 text-left font-semibold">Register<br><span class="text-xs font-normal">per year</span></th>
+                        <th class="px-6 py-4 text-left font-semibold">Transfer</th>
+                        <th class="px-6 py-4 text-left font-semibold">Renewal<br><span class="text-xs font-normal">per year</span></th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-200">
+                    <!-- .com.ng -->
+                    <tr class="hover:bg-gray-50">
+                        <td class="px-6 py-4 font-medium text-primary-600">.com.ng</td>
+                        <td class="px-6 py-4 text-gray-600">Nigerian</td>
+                        <td class="px-6 py-4 text-green-600">₦6,100</td>
+                        <td class="px-6 py-4 text-green-600">₦6,100</td>
+                        <td class="px-6 py-4 text-green-600">₦7,000</td>
+                    </tr>
+                    
+                    <!-- .org.ng -->
+                    <tr class="hover:bg-gray-50">
+                        <td class="px-6 py-4 font-medium text-primary-600">.org.ng</td>
+                        <td class="px-6 py-4 text-gray-600">Nigerian</td>
+                        <td class="px-6 py-4 text-gray-700">₦6,100</td>
+                        <td class="px-6 py-4 text-gray-700">₦6,100</td>
+                        <td class="px-6 py-4 text-gray-700">₦7,000</td>
+                    </tr>
+                    
+                    <!-- .net.ng -->
+                    <tr class="hover:bg-gray-50">
+                        <td class="px-6 py-4 font-medium text-primary-600">.net.ng</td>
+                        <td class="px-6 py-4 text-gray-600">Nigerian</td>
+                        <td class="px-6 py-4 text-gray-700">₦6,100</td>
+                        <td class="px-6 py-4 text-gray-700">₦6,100</td>
+                        <td class="px-6 py-4 text-gray-700">₦7,000</td>
+                    </tr>
+                    
+                    <!-- .edu.ng -->
+                    <tr class="hover:bg-gray-50">
+                        <td class="px-6 py-4 font-medium text-primary-600">.edu.ng</td>
+                        <td class="px-6 py-4 text-gray-600">Nigerian</td>
+                        <td class="px-6 py-4 text-gray-700">₦6,100</td>
+                        <td class="px-6 py-4 text-gray-700">₦6,100</td>
+                        <td class="px-6 py-4 text-gray-700">₦7,000</td>
+                    </tr>
+                    
+                    <!-- .gov.ng -->
+                    <tr class="hover:bg-gray-50">
+                        <td class="px-6 py-4 font-medium text-primary-600">.gov.ng</td>
+                        <td class="px-6 py-4 text-gray-600">Nigerian</td>
+                        <td class="px-6 py-4 text-gray-700">₦6,100</td>
+                        <td class="px-6 py-4 text-gray-700">₦6,100</td>
+                        <td class="px-6 py-4 text-gray-700">₦7,000</td>
+                    </tr>
+                    
+                    <!-- .com -->
+                    <tr class="hover:bg-gray-50">
+                        <td class="px-6 py-4 font-medium text-primary-600">.com</td>
+                        <td class="px-6 py-4 text-gray-600">International</td>
+                        <td class="px-6 py-4 text-gray-700">₦8,500</td>
+                        <td class="px-6 py-4 text-gray-700">₦8,500</td>
+                        <td class="px-6 py-4 text-gray-700">₦9,200</td>
+                    </tr>
+                    
+                    <!-- .org -->
+                    <tr class="hover:bg-gray-50">
+                        <td class="px-6 py-4 font-medium text-primary-600">.org</td>
+                        <td class="px-6 py-4 text-gray-600">International</td>
+                        <td class="px-6 py-4 text-gray-700">₦9,100</td>
+                        <td class="px-6 py-4 text-gray-700">₦9,100</td>
+                        <td class="px-6 py-4 text-gray-700">₦9,800</td>
+                    </tr>
+                    
+                    <!-- .net -->
+                    <tr class="hover:bg-gray-50">
+                        <td class="px-6 py-4 font-medium text-primary-600">.net</td>
+                        <td class="px-6 py-4 text-gray-600">International</td>
+                        <td class="px-6 py-4 text-gray-700">₦9,100</td>
+                        <td class="px-6 py-4 text-gray-700">₦9,100</td>
+                        <td class="px-6 py-4 text-gray-700">₦9,800</td>
+                    </tr>
+                    
+                    <!-- .info -->
+                    <tr class="hover:bg-gray-50">
+                        <td class="px-6 py-4 font-medium text-primary-600">.info</td>
+                        <td class="px-6 py-4 text-gray-600">International</td>
+                        <td class="px-6 py-4 text-gray-700">₦12,500</td>
+                        <td class="px-6 py-4 text-gray-700">₦12,500</td>
+                        <td class="px-6 py-4 text-gray-700">₦13,200</td>
+                    </tr>
+                    
+                    <!-- .biz -->
+                    <tr class="hover:bg-gray-50">
+                        <td class="px-6 py-4 font-medium text-primary-600">.biz</td>
+                        <td class="px-6 py-4 text-gray-600">International</td>
+                        <td class="px-6 py-4 text-gray-700">₦11,800</td>
+                        <td class="px-6 py-4 text-gray-700">₦11,800</td>
+                        <td class="px-6 py-4 text-gray-700">₦12,500</td>
+                    </tr>
+                    
+                    <!-- .co -->
+                    <tr class="hover:bg-gray-50">
+                        <td class="px-6 py-4 font-medium text-primary-600">.co</td>
+                        <td class="px-6 py-4 text-gray-600">International</td>
+                        <td class="px-6 py-4 text-gray-700">₦19,500</td>
+                        <td class="px-6 py-4 text-gray-700">₦19,500</td>
+                        <td class="px-6 py-4 text-gray-700">₦20,200</td>
+                    </tr>
+                    
+                    <!-- .io -->
+                    <tr class="hover:bg-gray-50">
+                        <td class="px-6 py-4 font-medium text-primary-600">.io</td>
+                        <td class="px-6 py-4 text-gray-600">International</td>
+                        <td class="px-6 py-4 text-gray-700">₦35,000</td>
+                        <td class="px-6 py-4 text-gray-700">₦35,000</td>
+                        <td class="px-6 py-4 text-gray-700">₦36,500</td>
+                    </tr>
+                    
+                    <!-- .me -->
+                    <tr class="hover:bg-gray-50">
+                        <td class="px-6 py-4 font-medium text-primary-600">.me</td>
+                        <td class="px-6 py-4 text-gray-600">International</td>
+                        <td class="px-6 py-4 text-gray-700">₦15,800</td>
+                        <td class="px-6 py-4 text-gray-700">₦15,800</td>
+                        <td class="px-6 py-4 text-gray-700">₦16,500</td>
+                    </tr>
+                    
+                    <!-- .tv -->
+                    <tr class="hover:bg-gray-50">
+                        <td class="px-6 py-4 font-medium text-primary-600">.tv</td>
+                        <td class="px-6 py-4 text-gray-600">International</td>
+                        <td class="px-6 py-4 text-gray-700">₦22,000</td>
+                        <td class="px-6 py-4 text-gray-700">₦22,000</td>
+                        <td class="px-6 py-4 text-gray-700">₦23,200</td>
+                    </tr>
+                    
+                    <!-- .cc -->
+                    <tr class="hover:bg-gray-50">
+                        <td class="px-6 py-4 font-medium text-primary-600">.cc</td>
+                        <td class="px-6 py-4 text-gray-600">International</td>
+                        <td class="px-6 py-4 text-gray-700">₦18,500</td>
+                        <td class="px-6 py-4 text-gray-700">₦18,500</td>
+                        <td class="px-6 py-4 text-gray-700">₦19,200</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Additional Information -->
+        <div class="mt-8 grid md:grid-cols-2 gap-6">
+            <div class="bg-blue-50 p-6 rounded-lg">
+                <h3 class="font-semibold text-blue-900 mb-2">Nigerian Domains (.ng)</h3>
+                <p class="text-blue-700 text-sm">
+                    Perfect for Nigerian businesses and organizations. Fast registration and competitive renewal rates.
+                </p>
+            </div>
+            <div class="bg-green-50 p-6 rounded-lg">
+                <h3 class="font-semibold text-green-900 mb-2">International Domains</h3>
+                <p class="text-green-700 text-sm">
+                    Global reach with popular extensions. Ideal for businesses targeting international markets.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="py-12 bg-primary-600 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-xl md:text-2xl font-sans font-bold mb-4">
+            Ready to Register Your Domain?
+        </h2>
+        <p class="text-sm text-primary-100 mb-6 max-w-3xl mx-auto">
+            Join thousands of satisfied Nigerian customers who trust us for their domain registration needs.
+            Get your perfect domain name online in minutes with our easy setup process.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="#domain-search" class="bg-white text-primary-600 hover:bg-primary-50 font-semibold py-2 px-6 rounded-lg transition duration-300 inline-flex items-center justify-center text-sm smooth-scroll">
+                Search Domains Now
+            </a>
+            <a href="{% url 'contact_us' %}" class="border border-white text-white hover:bg-white hover:text-primary-600 font-semibold py-2 px-6 rounded-lg transition duration-300 inline-flex items-center justify-center text-sm">
+                Contact Sales
+            </a>
+        </div>
+    </div>
+</section>
+{% endblock %}
