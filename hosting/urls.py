@@ -25,6 +25,7 @@ urlpatterns = [
     path('', views.home, name='home'),
     path('web-hosting/', views.web_hosting, name='web_hosting'),
     path('register-domain/', views.register_domain, name='register_domain'),
+    path('domain-suggestions/', views.domain_suggestions_page, name='domain_suggestions_page'),
     path('transfer-domain/', views.transfer_domain, name='transfer_domain'),
     path('ssl-certificates/', views.ssl_certificates, name='ssl_certificates'),
     path('whois-lookup/', views.whois_lookup, name='whois_lookup'),
@@ -40,6 +41,15 @@ urlpatterns = [
     path('account/user-management/', views.user_management, name='user_management'),
     path('account/security/', views.account_security, name='account_security'),
     path('account/email-history/', views.email_history, name='email_history'),
+    
+    # Shopping cart
+    path('shopping-cart/', views.shopping_cart, name='shopping_cart'),
+    path('domain-search-redirect/', views.domain_search_redirect, name='domain_search_redirect'),
+    
+    # Domain API endpoints
+    path('api/check-domain/', views.check_domain_availability, name='check_domain_availability'),
+    path('api/domain-suggestions/', views.get_domain_suggestions_api, name='domain_suggestions_api'),
+    path('api/tld-suggestions/', views.get_tld_suggestions_api, name='tld_suggestions_api'),
     
     # Support Pages
     path('contact-us/', views.contact_us, name='contact_us'),

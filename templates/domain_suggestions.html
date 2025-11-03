@@ -1,0 +1,312 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Domain Name Generator - Find Perfect Domain Names{% endblock %}
+{% block description %}Generate creative domain name suggestions for your business. Find the perfect domain with our AI-powered domain name generator tool.{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white">
+    <!-- Horizontal Border -->
+    <div class="h-1 bg-gradient-to-r from-primary-600 to-secondary-400"></div>
+    
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <div class="max-w-7xl mx-auto text-center">
+            <!-- Centered Content -->
+            <div>
+                <!-- Subtitle -->
+                <p class="text-primary-400 font-semibold text-sm uppercase tracking-wide mb-4">
+                    AI-Powered Domain Generator
+                </p>
+                
+                <h1 class="text-3xl md:text-4xl lg:text-5xl font-sans font-bold mb-6 leading-tight">
+                    Generate Perfect<br>
+                    <span class="text-primary-400">Domain Names</span>
+                </h1>
+                <p class="text-sm text-gray-300 mb-8 leading-relaxed max-w-4xl mx-auto">
+                    Find the perfect domain name for your business with our intelligent domain generator. Enter your business name or keywords 
+                    and discover <span class="text-primary-400 font-semibold">creative variations</span> with instant availability check.
+                </p>
+                
+                <!-- Domain Generator Form -->
+                <div class="mb-12">
+                    <form id="suggestion-search-form" class="max-w-4xl mx-auto">
+                        <div class="flex flex-col sm:flex-row gap-2">
+                            <div class="flex-1">
+                                <input 
+                                    type="text" 
+                                    id="business-keyword" 
+                                    name="keyword"
+                                    value="{% if initial_keyword %}{{ initial_keyword }}{% endif %}"
+                                    placeholder="Enter your business name or keywords..." 
+                                    class="w-full px-4 py-3 text-gray-900 rounded-lg border-2 border-gray-300 focus:border-primary-500 focus:outline-none text-base"
+                                    required
+                                >
+                            </div>
+                            <button 
+                                type="submit"
+                                id="generate-btn"
+                                class="bg-primary-600 hover:bg-primary-700 text-white font-semibold py-3 px-6 rounded-lg transition duration-300 text-sm whitespace-nowrap disabled:opacity-50 disabled:cursor-not-allowed"
+                            >
+                                <span id="generate-text">Generate Ideas</span>
+                                <svg id="generate-spinner" class="hidden animate-spin -ml-1 mr-3 h-5 w-5 text-white inline" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                                    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </form>
+                    
+                    <!-- Example Keywords -->
+                    <div class="mt-4 text-sm text-gray-400">
+                        <span class="mr-4">💡 <strong>Try:</strong> your business name, pizza, tech startup, consulting, photography</span>
+                    </div>
+                </div>
+                
+                <!-- Call to Action -->
+                <div class="text-center">
+                    <p class="text-gray-300 text-sm">
+                        Already have a specific domain in mind? <a href="{% url 'register_domain' %}" class="text-primary-400 hover:text-primary-300 font-semibold underline transition duration-200">Search it directly!</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Results Section -->
+<section class="py-16 bg-gray-50" id="results-section" style="display: none;">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Loading State -->
+        <div id="suggestions-loading" class="hidden text-center py-12">
+            <div class="inline-block animate-spin rounded-full h-12 w-12 border-b-2 border-primary-600"></div>
+            <p class="mt-4 text-gray-600">Generating creative domain suggestions...</p>
+        </div>
+
+        <!-- Results Header -->
+        <div id="suggestions-header" class="text-center mb-12 hidden">
+            <div class="inline-flex items-center bg-secondary-100 text-secondary-800 rounded-full px-4 py-2 text-sm font-semibold mb-4">
+                <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.293l-3-3a1 1 0 00-1.414 1.414L10.586 9.5 9.293 10.793a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z" clip-rule="evenodd"></path>
+                </svg>
+                Domain Suggestions Found
+            </div>
+            <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+                Perfect Domains for "<span id="searched-keyword" class="text-primary-600"></span>"
+            </h2>
+            <p class="text-sm text-gray-600 leading-relaxed max-w-3xl mx-auto">
+                Found <span id="suggestions-count" class="font-semibold text-secondary-600">0</span> creative domain suggestions. Click "Add to Cart" to register your favorite domain.
+            </p>
+        </div>
+
+        <!-- Results Table -->
+        <div id="suggestions-results" class="hidden">
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <div class="overflow-x-auto">
+                    <table class="w-full">
+                        <thead class="bg-gray-50">
+                            <tr>
+                                <th class="px-6 py-4 text-left text-xs font-semibold text-gray-900 uppercase tracking-wider">Domain Name</th>
+                                <th class="px-6 py-4 text-right text-xs font-semibold text-gray-900 uppercase tracking-wider">Price (NGN)</th>
+                                <th class="px-6 py-4 text-center text-xs font-semibold text-gray-900 uppercase tracking-wider">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="suggestions-table-body" class="bg-white divide-y divide-gray-200">
+                            <!-- Suggestions will be populated here -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Error State -->
+        <div id="suggestions-error" class="hidden bg-red-50 border border-red-200 rounded-xl p-8 text-center">
+            <div class="text-red-600">
+                <svg class="mx-auto h-12 w-12 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.732-.833-2.5 0L4.268 19.5c.77.833 1.732 2.5 3.232 2.5z" />
+                </svg>
+                <h3 class="text-lg font-semibold text-red-800 mb-2">Oops! Something went wrong</h3>
+                <p id="error-message" class="text-red-600"></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- How It Works Section -->
+<section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">How Our Domain Generator Works</h2>
+            <p class="text-sm text-gray-600 leading-relaxed max-w-3xl mx-auto">
+                Our AI-powered domain generator creates unique, brandable domain names tailored to your business needs.
+            </p>
+        </div>
+        
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="text-center">
+                <div class="bg-primary-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
+                    <svg class="w-8 h-8 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-900 mb-3">1. Enter Keywords</h3>
+                <p class="text-gray-600">Type your business name, industry, or relevant keywords</p>
+            </div>
+            
+            <div class="text-center">
+                <div class="bg-secondary-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
+                    <svg class="w-8 h-8 text-secondary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-900 mb-3">2. AI Generates Ideas</h3>
+                <p class="text-gray-600">Our system creates unique domain variations and combinations</p>
+            </div>
+            
+            <div class="text-center">
+                <div class="bg-green-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
+                    <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17M17 13v6a2 2 0 01-2 2H9a2 2 0 01-2-2v-6m8 0V9a2 2 0 00-2-2H9a2 2 0 00-2 2v4.01"></path>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-900 mb-3">3. Register & Go Live</h3>
+                <p class="text-gray-600">Choose your favorite and register instantly with one click</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('suggestion-search-form');
+    const keywordInput = document.getElementById('business-keyword');
+    const generateBtn = document.getElementById('generate-btn');
+    const generateText = document.getElementById('generate-text');
+    const generateSpinner = document.getElementById('generate-spinner');
+    
+    const resultsSection = document.getElementById('results-section');
+    const loadingEl = document.getElementById('suggestions-loading');
+    const headerEl = document.getElementById('suggestions-header');
+    const resultsEl = document.getElementById('suggestions-results');
+    const errorEl = document.getElementById('suggestions-error');
+    
+    const tableBody = document.getElementById('suggestions-table-body');
+    const searchedKeywordEl = document.getElementById('searched-keyword');
+    const suggestionsCountEl = document.getElementById('suggestions-count');
+    const errorMessageEl = document.getElementById('error-message');
+
+    // Auto-search if initial keyword is provided
+    if (keywordInput.value.trim()) {
+        searchSuggestions(keywordInput.value.trim());
+    }
+
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        const keyword = keywordInput.value.trim();
+        if (keyword) {
+            searchSuggestions(keyword);
+        }
+    });
+
+    function searchSuggestions(keyword) {
+        // Show results section and loading state
+        resultsSection.style.display = 'block';
+        resultsSection.scrollIntoView({ behavior: 'smooth' });
+        
+        // Hide previous results and errors
+        headerEl.classList.add('hidden');
+        resultsEl.classList.add('hidden');
+        errorEl.classList.add('hidden');
+        loadingEl.classList.remove('hidden');
+        
+        // Button loading state
+        generateBtn.disabled = true;
+        generateText.textContent = 'Generating...';
+        generateSpinner.classList.remove('hidden');
+
+        // Update URL
+        const url = new URL(window.location);
+        url.searchParams.set('keyword', keyword);
+        window.history.pushState({}, '', url);
+
+        // Make API call
+        fetch(`/api/domain-suggestions/?keyword=${encodeURIComponent(keyword)}`)
+            .then(response => response.json())
+            .then(data => {
+                loadingEl.classList.add('hidden');
+                
+                // Reset button state
+                generateBtn.disabled = false;
+                generateText.textContent = 'Generate Ideas';
+                generateSpinner.classList.add('hidden');
+                
+                if (data.success && data.suggestions && data.suggestions.length > 0) {
+                    displaySuggestions(keyword, data.suggestions);
+                } else {
+                    showError(data.error || 'No suggestions found. Try different keywords.');
+                }
+            })
+            .catch(error => {
+                loadingEl.classList.add('hidden');
+                
+                // Reset button state
+                generateBtn.disabled = false;
+                generateText.textContent = 'Generate Ideas';
+                generateSpinner.classList.add('hidden');
+                
+                showError('Network error. Please try again.');
+                console.error('Suggestions API error:', error);
+            });
+    }
+
+    function displaySuggestions(keyword, suggestions) {
+        searchedKeywordEl.textContent = keyword;
+        suggestionsCountEl.textContent = suggestions.length;
+        
+        tableBody.innerHTML = suggestions.map(suggestion => `
+            <tr class="hover:bg-gray-50 transition-colors duration-200">
+                <td class="px-6 py-4 whitespace-nowrap">
+                    <div class="flex items-center">
+                        <div class="w-4 h-4 bg-secondary-100 rounded-full flex items-center justify-center mr-3">
+                            <svg class="w-2 h-2 text-secondary-600" fill="currentColor" viewBox="0 0 8 8">
+                                <circle cx="4" cy="4" r="3"/>
+                            </svg>
+                        </div>
+                        <div class="text-sm font-medium text-gray-900">${suggestion.domain}</div>
+                    </div>
+                </td>
+                <td class="px-6 py-4 whitespace-nowrap text-right">
+                    <div class="text-lg font-semibold text-gray-900">₦${suggestion.price_ngn.toLocaleString()}</div>
+                </td>
+                <td class="px-6 py-4 whitespace-nowrap text-center">
+                    <button 
+                        onclick="addToCart('${suggestion.domain}', ${suggestion.price_ngn})"
+                        class="bg-primary-600 hover:bg-primary-700 text-white font-semibold py-2 px-4 rounded-lg transition-colors duration-200 text-sm"
+                    >
+                        Add to Cart
+                    </button>
+                </td>
+            </tr>
+        `).join('');
+        
+        headerEl.classList.remove('hidden');
+        resultsEl.classList.remove('hidden');
+    }
+
+    function showError(message) {
+        errorMessageEl.textContent = message;
+        errorEl.classList.remove('hidden');
+    }
+
+    // Add to cart function
+    window.addToCart = function(domain, price) {
+        // Redirect to shopping cart with domain
+        const url = new URL('/shopping-cart/', window.location.origin);
+        url.searchParams.set('a', 'add');
+        url.searchParams.set('domain', 'register');
+        url.searchParams.set('query', domain);
+        window.location.href = url.toString();
+    };
+});
+</script>
+{% endblock %}

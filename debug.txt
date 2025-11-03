@@ -1,0 +1,7052 @@
+[2025-11-03 13:40:49] [DOMAIN_CHECK] Starting domain availability check for: ucagency.com.ng
+[2025-11-03 13:40:49] [DOMAIN_CHECK] API URL: https://api.connectreseller.com/ConnectReseller/ESHOP/checkdomainavailable
+[2025-11-03 13:40:49] [DOMAIN_CHECK] API Params: {'APIKey': 'eTpim19KCTKwFIn', 'websiteName': 'ucagency.com.ng'}
+[2025-11-03 13:40:53] [DOMAIN_CHECK] API Response Status: 200
+[2025-11-03 13:40:53] [DOMAIN_CHECK] API Response Headers: {'Date': 'Mon, 03 Nov 2025 21:40:52 GMT', 'Content-Type': 'application/json;charset=UTF-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Server': 'Apache-Coyote/1.1', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept, tokenId'}
+[2025-11-03 13:40:53] [DOMAIN_CHECK] API Response for ucagency.com.ng: {
+  "responseMsg": {
+    "message": "Domain Available for Registration",
+    "id": 0,
+    "reason": null,
+    "statusCode": 200
+  },
+  "responseData": {
+    "domainType": "Standard",
+    "available": true,
+    "registrationFee": 4.89,
+    "transferFee": 4.89,
+    "renewalfee": 4.89
+  }
+}
+[2025-11-03 13:40:53] [DOMAIN_CHECK] Status Code: 200
+[2025-11-03 13:40:53] [DOMAIN_CHECK] Response Data: {
+  "domainType": "Standard",
+  "available": true,
+  "registrationFee": 4.89,
+  "transferFee": 4.89,
+  "renewalfee": 4.89
+}
+[2025-11-03 13:40:53] [DOMAIN_CHECK] Is Available (parsed): True
+[2025-11-03 13:40:53] [DOMAIN_CHECK] Final result for ucagency.com.ng: {
+  "success": true,
+  "available": true,
+  "domain": "ucagency.com.ng",
+  "message": "Domain Available for Registration",
+  "pricing": {
+    "registration": 8068.5,
+    "renewal": 8068.5,
+    "transfer": 8068.5
+  }
+}
+[2025-11-03 13:40:53] [TLD_SUGGESTIONS] Starting TLD suggestions request for: ucagency.com.ng
+[2025-11-03 13:40:53] [TLD_SUGGESTIONS] TLD API URL: https://api.connectreseller.com/ConnectReseller/ESHOP/getTldSuggestion
+[2025-11-03 13:40:53] [TLD_SUGGESTIONS] TLD API Params: {'APIKey': 'eTpim19KCTKwFIn', 'websiteName': 'ucagency.com.ng'}
+[2025-11-03 13:41:04] [TLD_SUGGESTIONS] TLD API Response Status: 200
+[2025-11-03 13:41:04] [TLD_SUGGESTIONS] TLD API Response Headers: {'Date': 'Mon, 03 Nov 2025 21:41:02 GMT', 'Content-Type': 'application/json;charset=UTF-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Server': 'Apache-Coyote/1.1', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept, tokenId'}
+[2025-11-03 13:41:04] [TLD_SUGGESTIONS] TLD API Response for ucagency.com.ng: {
+  "responseMsg": {
+    "message": "Success",
+    "id": 0,
+    "reason": null,
+    "statusCode": 200
+  },
+  "responseData": [
+    {
+      "websiteName": "ucagency.com",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.net",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.org",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.in",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.cc",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.tv",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.info",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.mobi",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.biz",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.co",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.me",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.asia",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.name",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.xyz",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.online",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.store",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.tech",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.site",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.website",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.space",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.fun",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.press",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.host",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.ae.org",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.br.com",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.cn.com",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.co.com",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.co.nl",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.co.no",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.com.de",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.com.se",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.de.com",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.eu.com",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.fm",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.gb.net",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.gr.com",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.hu.net",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.in.net",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.jp.net",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.jpn.com",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.mex.com",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.pw",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.radio.am",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.radio.fm",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.ru.com",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.sa.com",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.se.net",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.uk.com",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.uk.net",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.us.com",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.us.org",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.za.com",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.ooo",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.art",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.shop",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.icu",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.cloud",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.design",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.best",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.fo",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.gd",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.vg",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.baby",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.bar",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.cam",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.ceo",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.college",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.coop",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.desi",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.fans",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.feedback",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.ink",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.love",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.observer",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.protection",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.realty",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.reit",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.rent",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.rest",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.saarland",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.security",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.storage",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.theatre",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.tickets",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.wiki",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.bid",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.date",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.download",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.loan",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.men",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.party",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.stream",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.trade",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.win",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.faith",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.racing",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.review",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.science",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.webcam",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.accountant",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.cricket",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.coffee",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.expert",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.academy",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.community",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.exposed",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.accountants",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.company",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.express",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.agency",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.computer",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.fail",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.apartments",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.condos",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.farm",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.associates",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.construction",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.finance",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.bargains",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.contractors",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.financial",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.bike",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.cool",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.fish",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.bingo",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.fitness",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.boutique",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.coupons",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.flights",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.builders",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.florist",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.business",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.credit",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.football",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.cab",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.creditcard",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.foundation",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.cafe",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.cruises",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.fund",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.camera",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.dating",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.furniture",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.camp",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.deals",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.fyi",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.capital",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.delivery",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.gallery",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.cards",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.dental",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.gifts",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.care",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.diamonds",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.glass",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.careers",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.digital",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.gmbh",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.cash",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.direct",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.gold",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.casino",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.directory",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.golf",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.catering",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.discount",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.graphics",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.center",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.doctor",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.gratis",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.charity",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.dog",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.gripe",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.chat",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.domains",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.group",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.cheap",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.education",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.guide",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.church",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.email",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.guru",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.city",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.energy",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.healthcare",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.claims",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.engineering",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.hockey",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.cleaning",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.enterprises",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.holdings",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.clinic",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.equipment",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.holiday",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.clothing",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.estate",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.coach",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.events",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.hospital",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.codes",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.exchange",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.house",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.pictures",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.taxi",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.immo",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.pizza",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.team",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.industries",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.place",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.technology",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.institute",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.plumbing",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.tennis",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.insure",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.plus",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.theater",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.international",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.productions",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.tienda",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.investments",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.properties",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.tips",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.irish",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.recipes",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.tires",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.jetzt",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.reise",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.today",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.jewelry",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.reisen",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.tools",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.kitchen",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.rentals",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.tours",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.land",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.repair",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.town",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.lease",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.report",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.toys",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.legal",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.restaurant",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.training",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.life",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.run",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.university",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.lighting",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.salon",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.vacations",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.limited",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.sarl",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.ventures",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.limo",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.school",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.viajes",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.loans",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.schule",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.villas",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.ltd",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.services",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.vin",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.shoes",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.vision",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.maison",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.shopping",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.voyage",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.management",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.show",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.marketing",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.singles",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.watch",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.mba",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.soccer",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.wine",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.media",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.solar",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.works",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.memorial",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.solutions",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.world",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.money",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.spa",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.wtf",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.movie",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.style",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.zone",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.supplies",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.network",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.partners",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.parts",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.photography",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.systems",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.photos",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.tax",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.futbol",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.rehab",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.actor",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.games",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.republican",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.airforce",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.gives",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.reviews",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.army",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.haus",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.rip",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.attorney",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.immobilien",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.blog",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.auction",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.kaufen",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.rocks",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.band",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.lawyer",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.sale",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.consulting",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.live",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.social",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.dance",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.market",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.software",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.degree",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.moda",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.studio",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.democrat",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.mortgage",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.travel",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.dentist",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.navy",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.vet",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.engineer",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.news",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.video",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.family",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.ninja",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.forsale",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.pub",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.supply",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.support",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.surgery",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.monster",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.buzz",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.io",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.sh",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.ac",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.club",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.inc",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.bond",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.audio",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.blackfriday",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.auto",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.cars",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.car",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.christmas",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.click",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.diet",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.flowers",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.game",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.gift",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.guitars",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.help",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.hiphop",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.hiv",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.hosting",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.link",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.lol",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.mom",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.photo",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.pics",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.property",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.sexy",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.country",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.uno",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.abogado",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.beer",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.casa",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.cooking",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.fashion",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.fishing",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.fit",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.garden",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.horse",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.law",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.miami",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.rodeo",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.surf",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.vip",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.vodka",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.wedding",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.work",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.yoga",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.cyou",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.fan",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.beauty",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.build",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.hair",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.luxury",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.makeup",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.quest",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.skin",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.ski",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.archi",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.bet",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.bio",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.blue",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.black",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.kim",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.lotto",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.llc",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.lgbt",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.us",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.cfd",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.sbs",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.app",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.dev",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.new",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.one",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.dealer",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.forum",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.gay",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.qpon",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.london",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.homes",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.autos",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.motorcycles",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.boats",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.yachts",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.broker",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.forex",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.markets",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.trading",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.bank",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.insurance",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.\u092d\u093e\u0930\u0924",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.frl",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.juegos",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.tattoo",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.adult",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.boston",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.compare",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.luxe",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.porn",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.select",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.sex",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.ws",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.contact",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.global",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.green",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.organic",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.pet",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.pink",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.poker",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.promo",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.red",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.vote",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.case",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.gl",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.bh",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.it.com",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.sucks",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.bible",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.ph",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.kids",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.vegas",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.ai",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.ae",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.lat",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.earth",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.osaka",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.moe",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.paris",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.courses",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.health",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.study",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.xxx",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.vu",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.boo",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.day",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.page",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.rsvp",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.sydney",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.melbourne",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.diy",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.food",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.living",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.lifestyle",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.vana",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.\u0634\u0628\u0643\u0629",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.tube",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.eco",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.com.co",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.net.co",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.nom.co",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.channel",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.aaa.pro",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.pro",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.ac.mu",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.aca.pro",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.acct.pro",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.ag",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.avocat.pro",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.bar.pro",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.biz.pr",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.bz",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.co.ag",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.co.bz",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.co.lc",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.co.mu",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.com.ag",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.com.ai",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.com.bz",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.com.lc",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.com.mu",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.com.pr",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.com.sc",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.com.vc",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.cpa.pro",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.edu.mu",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.eng.pro",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.info.pr",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.isla.pr",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.ist",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.istanbul",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.jur.pro",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.l.lc",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.law.pro",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.lc",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.med.pro",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.mn",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.mu",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.name.pr",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.net.ag",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.net.ai",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.net.bz",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.net.lc",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.net.mu",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.net.pr",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.net.sc",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.net.vc",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.nom.ag",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.nom.mu",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.off.ai",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.onl",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.or.mu",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.org.ag",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.org.ai",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.org.bz",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.org.lc",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.org.mu",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.org.pr",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.org.sc",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.org.vc",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.p.lc",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.pr",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.pro.pr",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.recht.pro",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.rich",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.sc",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.shiksha",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.vc",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.voto",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.watches",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.\u7f51\u7ad9",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.\u79fb\u52a8",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.\u5546\u5e97",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.\u5a31\u4e50",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.\u6e38\u620f",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.\u4f01\u4e1a",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.id",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.dad",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.phd",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.esq",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.prof",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.tr",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.com.tr",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.az",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.ng",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.com.ng",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.org.ng",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.net.ng",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.i.ng",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.mobi.ng",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.im",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.tokyo",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.yokohama",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.\u307f\u3093\u306a",
+      "domainType": "-",
+      "available": false
+    },
+    {
+      "websiteName": "ucagency.how",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.soy",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.foo",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.zip",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.mov",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.nexus",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.meme",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.ing",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.co.id",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.web.id",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.or.id",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.biz.id",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.uk.cc",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.eu.cc",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.ec.cc",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.gu.cc",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.us.cc",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.tm",
+      "domainType": "Standard",
+      "available": true
+    },
+    {
+      "websiteName": "ucagency.to",
+      "domainType": "-",
+      "available": false
+    }
+  ]
+}
+[2025-11-03 13:41:04] [TLD_SUGGESTIONS] Final TLD suggestions result for ucagency.com.ng: {
+  "success": true,
+  "suggestions": [
+    {
+      "domain": "ucagency.com",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.net",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.org",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.in",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.cc",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.tv",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.info",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.mobi",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.biz",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.co",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.me",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.asia",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.name",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.xyz",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.online",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.store",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.tech",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.site",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.website",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.space",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.fun",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.press",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.host",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.ae.org",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.br.com",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.cn.com",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.co.com",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.co.nl",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.co.no",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.com.de",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.com.se",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.de.com",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.eu.com",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.fm",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.gb.net",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.gr.com",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.hu.net",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.in.net",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.jp.net",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.jpn.com",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.mex.com",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.pw",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.radio.am",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.radio.fm",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.ru.com",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.sa.com",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.se.net",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.uk.com",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.uk.net",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.us.com",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.us.org",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.za.com",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.ooo",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.art",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.shop",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.icu",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.cloud",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.design",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.best",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.fo",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.gd",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.vg",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.baby",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.bar",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.cam",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.ceo",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.college",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.coop",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.desi",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.fans",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.feedback",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.ink",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.love",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.observer",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.protection",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.realty",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.reit",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.rent",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.rest",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.saarland",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.security",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.storage",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.theatre",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.tickets",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.wiki",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.bid",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.date",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.download",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.loan",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.men",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.party",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.stream",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.trade",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.win",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.faith",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.racing",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.review",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.science",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.webcam",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.accountant",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.cricket",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.coffee",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.expert",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.academy",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.community",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.exposed",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.accountants",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.company",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.express",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.agency",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.computer",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.fail",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.apartments",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.condos",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.farm",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.associates",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.construction",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.finance",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.bargains",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.contractors",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.financial",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.bike",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.cool",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.fish",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.bingo",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.fitness",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.boutique",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.coupons",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.flights",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.builders",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.florist",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.business",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.credit",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.football",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.cab",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.creditcard",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.foundation",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.cafe",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.cruises",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.fund",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.camera",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.dating",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.furniture",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.camp",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.deals",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.fyi",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.capital",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.delivery",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.gallery",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.cards",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.dental",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.gifts",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.care",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.diamonds",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.glass",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.careers",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.digital",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.gmbh",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.cash",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.direct",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.gold",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.casino",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.directory",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.golf",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.catering",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.discount",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.graphics",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.center",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.doctor",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.gratis",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.charity",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.dog",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.gripe",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.chat",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.domains",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.group",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.cheap",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.education",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.guide",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.church",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.email",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.guru",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.city",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.energy",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.healthcare",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.claims",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.engineering",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.hockey",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.cleaning",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.enterprises",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.holdings",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.clinic",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.equipment",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.holiday",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.clothing",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.estate",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.coach",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.events",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.hospital",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.codes",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.exchange",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.house",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.pictures",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.taxi",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.immo",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.pizza",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.team",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.industries",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.place",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.technology",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.institute",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.plumbing",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.tennis",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.insure",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.plus",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.theater",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.international",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.productions",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.tienda",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.investments",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.properties",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.tips",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.irish",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.recipes",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.tires",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.jetzt",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.reise",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.today",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.jewelry",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.reisen",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.tools",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.kitchen",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.rentals",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.tours",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.land",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.repair",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.town",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.lease",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.report",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.toys",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.legal",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.restaurant",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.training",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.life",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.run",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.university",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.lighting",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.salon",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.vacations",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.limited",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.sarl",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.ventures",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.limo",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.school",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.viajes",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.loans",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.schule",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.villas",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.ltd",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.services",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.vin",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.shoes",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.vision",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.maison",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.shopping",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.voyage",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.management",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.show",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.marketing",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.singles",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.watch",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.mba",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.soccer",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.wine",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.media",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.solar",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.works",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.memorial",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.solutions",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.world",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.money",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.spa",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.wtf",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.movie",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.style",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.zone",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.supplies",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.network",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.partners",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.parts",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.photography",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.systems",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.photos",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.tax",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.futbol",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.rehab",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.actor",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.games",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.republican",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.airforce",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.gives",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.reviews",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.army",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.haus",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.rip",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.attorney",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.immobilien",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.blog",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.auction",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.kaufen",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.rocks",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.band",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.lawyer",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.sale",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.consulting",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.live",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.social",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.dance",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.market",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.software",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.degree",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.moda",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.studio",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.democrat",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.mortgage",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.travel",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.dentist",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.navy",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.vet",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.engineer",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.news",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.video",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.family",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.ninja",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.forsale",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.pub",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.supply",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.support",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.surgery",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.monster",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.buzz",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.io",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.sh",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.ac",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.club",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.inc",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.bond",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.audio",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.blackfriday",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.auto",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.cars",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.car",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.christmas",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.click",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.diet",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.flowers",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.game",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.gift",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.guitars",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.help",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.hiphop",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.hiv",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.hosting",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.link",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.lol",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.mom",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.photo",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.pics",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.property",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.sexy",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.country",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.uno",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.abogado",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.beer",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.casa",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.cooking",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.fashion",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.fishing",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.fit",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.garden",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.horse",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.law",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.miami",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.rodeo",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.surf",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.vip",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.vodka",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.wedding",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.work",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.yoga",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.cyou",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.fan",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.beauty",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.build",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.hair",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.luxury",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.makeup",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.quest",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.skin",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.ski",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.archi",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.bet",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.bio",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.blue",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.black",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.kim",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.lotto",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.llc",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.lgbt",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.us",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.cfd",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.sbs",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.app",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.dev",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.new",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.one",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.dealer",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.forum",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.gay",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.qpon",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.london",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.homes",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.autos",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.motorcycles",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.boats",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.yachts",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.broker",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.forex",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.markets",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.trading",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.bank",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.insurance",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.\u092d\u093e\u0930\u0924",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.frl",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.juegos",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.tattoo",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.adult",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.boston",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.compare",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.luxe",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.porn",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.select",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.sex",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.ws",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.contact",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.global",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.green",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.organic",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.pet",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.pink",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.poker",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.promo",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.red",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.vote",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.case",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.gl",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.bh",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.it.com",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.sucks",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.bible",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.ph",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.kids",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.vegas",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.ai",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.ae",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.lat",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.earth",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.osaka",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.moe",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.paris",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.courses",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.health",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.study",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.xxx",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.vu",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.boo",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.day",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.page",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.rsvp",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.sydney",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.melbourne",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.diy",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.food",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.living",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.lifestyle",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.vana",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.\u0634\u0628\u0643\u0629",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.tube",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.eco",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.com.co",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.net.co",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.nom.co",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.channel",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.aaa.pro",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.pro",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.ac.mu",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.aca.pro",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.acct.pro",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.ag",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.avocat.pro",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.bar.pro",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.biz.pr",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.bz",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.co.ag",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.co.bz",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.co.lc",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.co.mu",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.com.ag",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.com.ai",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.com.bz",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.com.lc",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.com.mu",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.com.pr",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.com.sc",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.com.vc",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.cpa.pro",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.edu.mu",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.eng.pro",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.info.pr",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.isla.pr",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.ist",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.istanbul",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.jur.pro",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.l.lc",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.law.pro",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.lc",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.med.pro",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.mn",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.mu",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.name.pr",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.net.ag",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.net.ai",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.net.bz",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.net.lc",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.net.mu",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.net.pr",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.net.sc",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.net.vc",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.nom.ag",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.nom.mu",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.off.ai",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.onl",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.or.mu",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.org.ag",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.org.ai",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.org.bz",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.org.lc",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.org.mu",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.org.pr",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.org.sc",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.org.vc",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.p.lc",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.pr",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.pro.pr",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.recht.pro",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.rich",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.sc",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.shiksha",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.vc",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.voto",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.watches",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.\u7f51\u7ad9",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.\u79fb\u52a8",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.\u5546\u5e97",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.\u5a31\u4e50",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.\u6e38\u620f",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.\u4f01\u4e1a",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.id",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.dad",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.phd",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.esq",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.prof",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.tr",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.com.tr",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.az",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.ng",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.com.ng",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.org.ng",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.net.ng",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.i.ng",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.mobi.ng",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.im",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.tokyo",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.yokohama",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.\u307f\u3093\u306a",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    },
+    {
+      "domain": "ucagency.how",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.soy",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.foo",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.zip",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.mov",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.nexus",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.meme",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.ing",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.co.id",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.web.id",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.or.id",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.biz.id",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.uk.cc",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.eu.cc",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.ec.cc",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.gu.cc",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.us.cc",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.tm",
+      "available": true,
+      "price": 21714.0,
+      "type": "Standard"
+    },
+    {
+      "domain": "ucagency.to",
+      "available": false,
+      "price": 21714.0,
+      "type": "-"
+    }
+  ]
+}
+[2025-11-03 13:44:39] [SUGGESTIONS] Starting domain suggestions for keyword: reter
+[2025-11-03 13:44:39] [SUGGESTIONS] Will try keywords in order: ['reter.com', 'reter', 'example.com', 'test.com', 'domain.com']
+[2025-11-03 13:44:39] [SUGGESTIONS] Trying keyword: reter.com
+[2025-11-03 13:44:39] [SUGGESTIONS] Suggestions API URL: https://api.connectreseller.com/ConnectReseller/ESHOP/domainSuggestion
+[2025-11-03 13:44:39] [SUGGESTIONS] Suggestions API Params: {'APIKey': 'eTpim19KCTKwFIn', 'keyword': 'reter.com', 'maxResult': 5}
+[2025-11-03 13:44:43] [SUGGESTIONS] Suggestions API Response Status: 200
+[2025-11-03 13:44:43] [SUGGESTIONS] Suggestions API Response Headers: {'Date': 'Mon, 03 Nov 2025 21:44:42 GMT', 'Content-Type': 'application/json;charset=UTF-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Server': 'Apache-Coyote/1.1', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept, tokenId'}
+[2025-11-03 13:44:43] [SUGGESTIONS] Suggestions API Response Data: {
+  "registryDomainSuggestionList": [
+    {
+      "domainName": "ReTer.link",
+      "price": 8.79
+    },
+    {
+      "domainName": "ReTert.com",
+      "price": 11.99
+    },
+    {
+      "domainName": "ReTerse.com",
+      "price": 11.99
+    },
+    {
+      "domainName": "ReTer.biz",
+      "price": 6.29
+    },
+    {
+      "domainName": "ReTer.co",
+      "price": 11.99
+    }
+  ]
+}
+[2025-11-03 13:44:43] [SUGGESTIONS] Extracted suggestion list: [{'domainName': 'ReTer.link', 'price': 8.79}, {'domainName': 'ReTert.com', 'price': 11.99}, {'domainName': 'ReTerse.com', 'price': 11.99}, {'domainName': 'ReTer.biz', 'price': 6.29}, {'domainName': 'ReTer.co', 'price': 11.99}]
+[2025-11-03 13:44:43] [SUGGESTIONS] Processed suggestion: {'domain': 'ReTer.link', 'price_usd': 8.79, 'price_ngn': 14503.5}
+[2025-11-03 13:44:43] [SUGGESTIONS] Processed suggestion: {'domain': 'ReTert.com', 'price_usd': 11.99, 'price_ngn': 19783.5}
+[2025-11-03 13:44:43] [SUGGESTIONS] Processed suggestion: {'domain': 'ReTerse.com', 'price_usd': 11.99, 'price_ngn': 19783.5}
+[2025-11-03 13:44:43] [SUGGESTIONS] Processed suggestion: {'domain': 'ReTer.biz', 'price_usd': 6.29, 'price_ngn': 10378.5}
+[2025-11-03 13:44:43] [SUGGESTIONS] Processed suggestion: {'domain': 'ReTer.co', 'price_usd': 11.99, 'price_ngn': 19783.5}
+[2025-11-03 13:44:43] [SUGGESTIONS] Final suggestions count: 5
+[2025-11-03 13:45:42] [SUGGESTIONS] Starting domain suggestions for keyword: reter
+[2025-11-03 13:45:42] [SUGGESTIONS] Will try keywords in order: ['reter.com', 'reter', 'example.com', 'test.com', 'domain.com']
+[2025-11-03 13:45:42] [SUGGESTIONS] Trying keyword: reter.com
+[2025-11-03 13:45:42] [SUGGESTIONS] Suggestions API URL: https://api.connectreseller.com/ConnectReseller/ESHOP/domainSuggestion
+[2025-11-03 13:45:42] [SUGGESTIONS] Suggestions API Params: {'APIKey': 'eTpim19KCTKwFIn', 'keyword': 'reter.com', 'maxResult': 5}
+[2025-11-03 13:45:45] [SUGGESTIONS] Suggestions API Response Status: 200
+[2025-11-03 13:45:45] [SUGGESTIONS] Suggestions API Response Headers: {'Date': 'Mon, 03 Nov 2025 21:45:44 GMT', 'Content-Type': 'application/json;charset=UTF-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Server': 'Apache-Coyote/1.1', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept, tokenId'}
+[2025-11-03 13:45:45] [SUGGESTIONS] Suggestions API Response Data: {
+  "registryDomainSuggestionList": [
+    {
+      "domainName": "ReTer.link",
+      "price": 8.79
+    },
+    {
+      "domainName": "ReTert.com",
+      "price": 11.99
+    },
+    {
+      "domainName": "ReTerInvest.com",
+      "price": 11.99
+    },
+    {
+      "domainName": "ReTer.biz",
+      "price": 6.29
+    },
+    {
+      "domainName": "ReTer.co",
+      "price": 11.99
+    }
+  ]
+}
+[2025-11-03 13:45:45] [SUGGESTIONS] Extracted suggestion list: [{'domainName': 'ReTer.link', 'price': 8.79}, {'domainName': 'ReTert.com', 'price': 11.99}, {'domainName': 'ReTerInvest.com', 'price': 11.99}, {'domainName': 'ReTer.biz', 'price': 6.29}, {'domainName': 'ReTer.co', 'price': 11.99}]
+[2025-11-03 13:45:45] [SUGGESTIONS] Processed suggestion: {'domain': 'ReTer.link', 'price_usd': 8.79, 'price_ngn': 14503.5}
+[2025-11-03 13:45:45] [SUGGESTIONS] Processed suggestion: {'domain': 'ReTert.com', 'price_usd': 11.99, 'price_ngn': 19783.5}
+[2025-11-03 13:45:45] [SUGGESTIONS] Processed suggestion: {'domain': 'ReTerInvest.com', 'price_usd': 11.99, 'price_ngn': 19783.5}
+[2025-11-03 13:45:45] [SUGGESTIONS] Processed suggestion: {'domain': 'ReTer.biz', 'price_usd': 6.29, 'price_ngn': 10378.5}
+[2025-11-03 13:45:45] [SUGGESTIONS] Processed suggestion: {'domain': 'ReTer.co', 'price_usd': 11.99, 'price_ngn': 19783.5}
+[2025-11-03 13:45:45] [SUGGESTIONS] Final suggestions count: 5
+[2025-11-03 13:45:53] [SUGGESTIONS] Starting domain suggestions for keyword: siggy
+[2025-11-03 13:45:53] [SUGGESTIONS] Will try keywords in order: ['siggy.com', 'siggy', 'example.com', 'test.com', 'domain.com']
+[2025-11-03 13:45:53] [SUGGESTIONS] Trying keyword: siggy.com
+[2025-11-03 13:45:53] [SUGGESTIONS] Suggestions API URL: https://api.connectreseller.com/ConnectReseller/ESHOP/domainSuggestion
+[2025-11-03 13:45:53] [SUGGESTIONS] Suggestions API Params: {'APIKey': 'eTpim19KCTKwFIn', 'keyword': 'siggy.com', 'maxResult': 5}
+[2025-11-03 13:45:56] [SUGGESTIONS] Suggestions API Response Status: 200
+[2025-11-03 13:45:56] [SUGGESTIONS] Suggestions API Response Headers: {'Date': 'Mon, 03 Nov 2025 21:45:55 GMT', 'Content-Type': 'application/json;charset=UTF-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Server': 'Apache-Coyote/1.1', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept, tokenId'}
+[2025-11-03 13:45:56] [SUGGESTIONS] Suggestions API Response Data: {
+  "registryDomainSuggestionList": [
+    {
+      "domainName": "SIggy.link",
+      "price": 8.79
+    },
+    {
+      "domainName": "SIzzy.link",
+      "price": 8.79
+    },
+    {
+      "domainName": "SJonesy.com",
+      "price": 11.99
+    },
+    {
+      "domainName": "SIggy.biz",
+      "price": 6.29
+    },
+    {
+      "domainName": "SIggy.co",
+      "price": 11.99
+    }
+  ]
+}
+[2025-11-03 13:45:56] [SUGGESTIONS] Extracted suggestion list: [{'domainName': 'SIggy.link', 'price': 8.79}, {'domainName': 'SIzzy.link', 'price': 8.79}, {'domainName': 'SJonesy.com', 'price': 11.99}, {'domainName': 'SIggy.biz', 'price': 6.29}, {'domainName': 'SIggy.co', 'price': 11.99}]
+[2025-11-03 13:45:56] [SUGGESTIONS] Processed suggestion: {'domain': 'SIggy.link', 'price_usd': 8.79, 'price_ngn': 14503.5}
+[2025-11-03 13:45:56] [SUGGESTIONS] Processed suggestion: {'domain': 'SIzzy.link', 'price_usd': 8.79, 'price_ngn': 14503.5}
+[2025-11-03 13:45:56] [SUGGESTIONS] Processed suggestion: {'domain': 'SJonesy.com', 'price_usd': 11.99, 'price_ngn': 19783.5}
+[2025-11-03 13:45:56] [SUGGESTIONS] Processed suggestion: {'domain': 'SIggy.biz', 'price_usd': 6.29, 'price_ngn': 10378.5}
+[2025-11-03 13:45:56] [SUGGESTIONS] Processed suggestion: {'domain': 'SIggy.co', 'price_usd': 11.99, 'price_ngn': 19783.5}
+[2025-11-03 13:45:56] [SUGGESTIONS] Final suggestions count: 5
+[2025-11-03 13:46:30] [SUGGESTIONS] Starting domain suggestions for keyword: bisola
+[2025-11-03 13:46:30] [SUGGESTIONS] Will try keywords in order: ['bisola.com', 'bisola', 'example.com', 'test.com', 'domain.com']
+[2025-11-03 13:46:30] [SUGGESTIONS] Trying keyword: bisola.com
+[2025-11-03 13:46:30] [SUGGESTIONS] Suggestions API URL: https://api.connectreseller.com/ConnectReseller/ESHOP/domainSuggestion
+[2025-11-03 13:46:30] [SUGGESTIONS] Suggestions API Params: {'APIKey': 'eTpim19KCTKwFIn', 'keyword': 'bisola.com', 'maxResult': 5}
+[2025-11-03 13:46:33] [SUGGESTIONS] Suggestions API Response Status: 200
+[2025-11-03 13:46:33] [SUGGESTIONS] Suggestions API Response Headers: {'Date': 'Mon, 03 Nov 2025 21:46:32 GMT', 'Content-Type': 'application/json;charset=UTF-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Server': 'Apache-Coyote/1.1', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept, tokenId'}
+[2025-11-03 13:46:33] [SUGGESTIONS] Suggestions API Response Data: {
+  "registryDomainSuggestionList": [
+    {
+      "domainName": "BIsola.link",
+      "price": 8.79
+    },
+    {
+      "domainName": "BIsolaEs.com",
+      "price": 11.99
+    },
+    {
+      "domainName": "QIsola.com",
+      "price": 11.99
+    },
+    {
+      "domainName": "BIsola.biz",
+      "price": 6.29
+    },
+    {
+      "domainName": "BIsola.co",
+      "price": 11.99
+    }
+  ]
+}
+[2025-11-03 13:46:33] [SUGGESTIONS] Extracted suggestion list: [{'domainName': 'BIsola.link', 'price': 8.79}, {'domainName': 'BIsolaEs.com', 'price': 11.99}, {'domainName': 'QIsola.com', 'price': 11.99}, {'domainName': 'BIsola.biz', 'price': 6.29}, {'domainName': 'BIsola.co', 'price': 11.99}]
+[2025-11-03 13:46:33] [SUGGESTIONS] Processed suggestion: {'domain': 'BIsola.link', 'price_usd': 8.79, 'price_ngn': 14503.5}
+[2025-11-03 13:46:33] [SUGGESTIONS] Processed suggestion: {'domain': 'BIsolaEs.com', 'price_usd': 11.99, 'price_ngn': 19783.5}
+[2025-11-03 13:46:33] [SUGGESTIONS] Processed suggestion: {'domain': 'QIsola.com', 'price_usd': 11.99, 'price_ngn': 19783.5}
+[2025-11-03 13:46:33] [SUGGESTIONS] Processed suggestion: {'domain': 'BIsola.biz', 'price_usd': 6.29, 'price_ngn': 10378.5}
+[2025-11-03 13:46:33] [SUGGESTIONS] Processed suggestion: {'domain': 'BIsola.co', 'price_usd': 11.99, 'price_ngn': 19783.5}
+[2025-11-03 13:46:33] [SUGGESTIONS] Final suggestions count: 5
+[2025-11-03 13:46:39] [SUGGESTIONS] Starting domain suggestions for keyword: bisolayujnbbv
+[2025-11-03 13:46:39] [SUGGESTIONS] Will try keywords in order: ['bisolayujnbbv.com', 'bisolayujnbbv', 'example.com', 'test.com', 'domain.com']
+[2025-11-03 13:46:39] [SUGGESTIONS] Trying keyword: bisolayujnbbv.com
+[2025-11-03 13:46:39] [SUGGESTIONS] Suggestions API URL: https://api.connectreseller.com/ConnectReseller/ESHOP/domainSuggestion
+[2025-11-03 13:46:39] [SUGGESTIONS] Suggestions API Params: {'APIKey': 'eTpim19KCTKwFIn', 'keyword': 'bisolayujnbbv.com', 'maxResult': 5}
+[2025-11-03 13:46:43] [SUGGESTIONS] Suggestions API Response Status: 200
+[2025-11-03 13:46:43] [SUGGESTIONS] Suggestions API Response Headers: {'Date': 'Mon, 03 Nov 2025 21:46:42 GMT', 'Content-Type': 'application/json;charset=UTF-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Server': 'Apache-Coyote/1.1', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept, tokenId'}
+[2025-11-03 13:46:43] [SUGGESTIONS] Suggestions API Response Data: {
+  "registryDomainSuggestionList": [
+    {
+      "domainName": "Bisolayujnbbv.link",
+      "price": 8.79
+    },
+    {
+      "domainName": "Bisolayujnbbv.com",
+      "price": 11.99
+    },
+    {
+      "domainName": "BisolayujnbbvOnline.com",
+      "price": 11.99
+    },
+    {
+      "domainName": "Bisolayujnbbv.biz",
+      "price": 6.29
+    },
+    {
+      "domainName": "Bisolayujnbbv.co",
+      "price": 11.99
+    }
+  ]
+}
+[2025-11-03 13:46:43] [SUGGESTIONS] Extracted suggestion list: [{'domainName': 'Bisolayujnbbv.link', 'price': 8.79}, {'domainName': 'Bisolayujnbbv.com', 'price': 11.99}, {'domainName': 'BisolayujnbbvOnline.com', 'price': 11.99}, {'domainName': 'Bisolayujnbbv.biz', 'price': 6.29}, {'domainName': 'Bisolayujnbbv.co', 'price': 11.99}]
+[2025-11-03 13:46:43] [SUGGESTIONS] Processed suggestion: {'domain': 'Bisolayujnbbv.link', 'price_usd': 8.79, 'price_ngn': 14503.5}
+[2025-11-03 13:46:43] [SUGGESTIONS] Processed suggestion: {'domain': 'Bisolayujnbbv.com', 'price_usd': 11.99, 'price_ngn': 19783.5}
+[2025-11-03 13:46:43] [SUGGESTIONS] Processed suggestion: {'domain': 'BisolayujnbbvOnline.com', 'price_usd': 11.99, 'price_ngn': 19783.5}
+[2025-11-03 13:46:43] [SUGGESTIONS] Processed suggestion: {'domain': 'Bisolayujnbbv.biz', 'price_usd': 6.29, 'price_ngn': 10378.5}
+[2025-11-03 13:46:43] [SUGGESTIONS] Processed suggestion: {'domain': 'Bisolayujnbbv.co', 'price_usd': 11.99, 'price_ngn': 19783.5}
+[2025-11-03 13:46:43] [SUGGESTIONS] Final suggestions count: 5
+[2025-11-03 13:54:40] [DOMAIN_CHECK] Starting domain availability check for: ucagency.com.ng
+[2025-11-03 13:54:40] [DOMAIN_CHECK] API URL: https://api.connectreseller.com/ConnectReseller/ESHOP/checkdomainavailable
+[2025-11-03 13:54:40] [DOMAIN_CHECK] API Params: {'APIKey': 'eTpim19KCTKwFIn', 'websiteName': 'ucagency.com.ng'}
+[2025-11-03 13:54:44] [DOMAIN_CHECK] API Response Status: 200
+[2025-11-03 13:54:44] [DOMAIN_CHECK] API Response Headers: {'Date': 'Mon, 03 Nov 2025 21:54:43 GMT', 'Content-Type': 'application/json;charset=UTF-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Server': 'Apache-Coyote/1.1', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept, tokenId'}
+[2025-11-03 13:54:44] [DOMAIN_CHECK] API Response for ucagency.com.ng: {
+  "responseMsg": {
+    "message": "Domain Available for Registration",
+    "id": 0,
+    "reason": null,
+    "statusCode": 200
+  },
+  "responseData": {
+    "domainType": "Standard",
+    "available": true,
+    "registrationFee": 4.89,
+    "transferFee": 4.89,
+    "renewalfee": 4.89
+  }
+}
+[2025-11-03 13:54:44] [DOMAIN_CHECK] Status Code: 200
+[2025-11-03 13:54:44] [DOMAIN_CHECK] Response Data: {
+  "domainType": "Standard",
+  "available": true,
+  "registrationFee": 4.89,
+  "transferFee": 4.89,
+  "renewalfee": 4.89
+}
+[2025-11-03 13:54:44] [DOMAIN_CHECK] Is Available (parsed): True
+[2025-11-03 13:54:44] [DOMAIN_CHECK] Final result for ucagency.com.ng: {
+  "success": true,
+  "available": true,
+  "domain": "ucagency.com.ng",
+  "message": "Domain Available for Registration",
+  "pricing": {
+    "registration": 8068.5,
+    "renewal": 8068.5,
+    "transfer": 8068.5
+  }
+}
+[2025-11-03 13:55:18] [SUGGESTIONS] Starting domain suggestions for keyword: bisolayujnbbv
+[2025-11-03 13:55:18] [SUGGESTIONS] Will try keywords in order: ['bisolayujnbbv.com', 'bisolayujnbbv', 'example.com', 'test.com', 'domain.com']
+[2025-11-03 13:55:18] [SUGGESTIONS] Trying keyword: bisolayujnbbv.com
+[2025-11-03 13:55:18] [SUGGESTIONS] Suggestions API URL: https://api.connectreseller.com/ConnectReseller/ESHOP/domainSuggestion
+[2025-11-03 13:55:18] [SUGGESTIONS] Suggestions API Params: {'APIKey': 'eTpim19KCTKwFIn', 'keyword': 'bisolayujnbbv.com', 'maxResult': 5}
+[2025-11-03 13:55:22] [SUGGESTIONS] Suggestions API Response Status: 200
+[2025-11-03 13:55:22] [SUGGESTIONS] Suggestions API Response Headers: {'Date': 'Mon, 03 Nov 2025 21:55:20 GMT', 'Content-Type': 'application/json;charset=UTF-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Server': 'Apache-Coyote/1.1', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept, tokenId'}
+[2025-11-03 13:55:22] [SUGGESTIONS] Suggestions API Response Data: {
+  "registryDomainSuggestionList": [
+    {
+      "domainName": "Bisolayujnbbv.link",
+      "price": 8.79
+    },
+    {
+      "domainName": "Bisolayujnbbv.com",
+      "price": 11.99
+    },
+    {
+      "domainName": "BisolayujnbbvOnline.com",
+      "price": 11.99
+    },
+    {
+      "domainName": "Bisolayujnbbv.biz",
+      "price": 6.29
+    },
+    {
+      "domainName": "Bisolayujnbbv.co",
+      "price": 11.99
+    }
+  ]
+}
+[2025-11-03 13:55:22] [SUGGESTIONS] Extracted suggestion list: [{'domainName': 'Bisolayujnbbv.link', 'price': 8.79}, {'domainName': 'Bisolayujnbbv.com', 'price': 11.99}, {'domainName': 'BisolayujnbbvOnline.com', 'price': 11.99}, {'domainName': 'Bisolayujnbbv.biz', 'price': 6.29}, {'domainName': 'Bisolayujnbbv.co', 'price': 11.99}]
+[2025-11-03 13:55:22] [SUGGESTIONS] Processed suggestion: {'domain': 'Bisolayujnbbv.link', 'price_usd': 8.79, 'price_ngn': 14503.5}
+[2025-11-03 13:55:22] [SUGGESTIONS] Processed suggestion: {'domain': 'Bisolayujnbbv.com', 'price_usd': 11.99, 'price_ngn': 19783.5}
+[2025-11-03 13:55:22] [SUGGESTIONS] Processed suggestion: {'domain': 'BisolayujnbbvOnline.com', 'price_usd': 11.99, 'price_ngn': 19783.5}
+[2025-11-03 13:55:22] [SUGGESTIONS] Processed suggestion: {'domain': 'Bisolayujnbbv.biz', 'price_usd': 6.29, 'price_ngn': 10378.5}
+[2025-11-03 13:55:22] [SUGGESTIONS] Processed suggestion: {'domain': 'Bisolayujnbbv.co', 'price_usd': 11.99, 'price_ngn': 19783.5}
+[2025-11-03 13:55:22] [SUGGESTIONS] Final suggestions count: 5
+[2025-11-03 13:56:32] [DOMAIN_CHECK] Starting domain availability check for: hosting.cloud
+[2025-11-03 13:56:32] [DOMAIN_CHECK] API URL: https://api.connectreseller.com/ConnectReseller/ESHOP/checkdomainavailable
+[2025-11-03 13:56:32] [DOMAIN_CHECK] API Params: {'APIKey': 'eTpim19KCTKwFIn', 'websiteName': 'hosting.cloud'}
+[2025-11-03 13:56:36] [DOMAIN_CHECK] API Response Status: 200
+[2025-11-03 13:56:36] [DOMAIN_CHECK] API Response Headers: {'Date': 'Mon, 03 Nov 2025 21:56:35 GMT', 'Content-Type': 'application/json;charset=UTF-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Server': 'Apache-Coyote/1.1', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept, tokenId'}
+[2025-11-03 13:56:36] [DOMAIN_CHECK] API Response for hosting.cloud: {
+  "responseMsg": {
+    "message": "Domain Available for Registration",
+    "id": 0,
+    "reason": null,
+    "statusCode": 200
+  },
+  "responseData": {
+    "domainType": "Premium",
+    "available": true,
+    "registrationFees": 6250.0,
+    "renewalfees": 6250.0,
+    "transferFees": 6250.0
+  }
+}
+[2025-11-03 13:56:36] [DOMAIN_CHECK] Status Code: 200
+[2025-11-03 13:56:36] [DOMAIN_CHECK] Response Data: {
+  "domainType": "Premium",
+  "available": true,
+  "registrationFees": 6250.0,
+  "renewalfees": 6250.0,
+  "transferFees": 6250.0
+}
+[2025-11-03 13:56:36] [DOMAIN_CHECK] Is Available (parsed): True
+[2025-11-03 13:56:36] [DOMAIN_CHECK] Final result for hosting.cloud: {
+  "success": true,
+  "available": true,
+  "domain": "hosting.cloud",
+  "message": "Domain Available for Registration",
+  "pricing": {
+    "registration": 21714.0,
+    "renewal": 21714.0,
+    "transfer": 21714.0
+  }
+}
+[2025-11-03 13:58:54] [DOMAIN_CHECK] Starting domain availability check for: hosting.cloud
+[2025-11-03 13:58:54] [DOMAIN_CHECK] API URL: https://api.connectreseller.com/ConnectReseller/ESHOP/checkdomainavailable
+[2025-11-03 13:58:54] [DOMAIN_CHECK] API Params: {'APIKey': 'eTpim19KCTKwFIn', 'websiteName': 'hosting.cloud'}
+[2025-11-03 13:58:58] [DOMAIN_CHECK] API Response Status: 200
+[2025-11-03 13:58:58] [DOMAIN_CHECK] API Response Headers: {'Date': 'Mon, 03 Nov 2025 21:58:57 GMT', 'Content-Type': 'application/json;charset=UTF-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Server': 'Apache-Coyote/1.1', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept, tokenId'}
+[2025-11-03 13:58:58] [DOMAIN_CHECK] API Response for hosting.cloud: {
+  "responseMsg": {
+    "message": "Domain Available for Registration",
+    "id": 0,
+    "reason": null,
+    "statusCode": 200
+  },
+  "responseData": {
+    "domainType": "Premium",
+    "available": true,
+    "registrationFees": 6250.0,
+    "renewalfees": 6250.0,
+    "transferFees": 6250.0
+  }
+}
+[2025-11-03 13:58:58] [DOMAIN_CHECK] Status Code: 200
+[2025-11-03 13:58:58] [DOMAIN_CHECK] Response Data: {
+  "domainType": "Premium",
+  "available": true,
+  "registrationFees": 6250.0,
+  "renewalfees": 6250.0,
+  "transferFees": 6250.0
+}
+[2025-11-03 13:58:58] [DOMAIN_CHECK] Is Available (parsed): True
+[2025-11-03 13:58:58] [DOMAIN_CHECK] Final result for hosting.cloud: {
+  "success": true,
+  "available": true,
+  "domain": "hosting.cloud",
+  "message": "Domain Available for Registration",
+  "pricing": {
+    "registration": 21714.0,
+    "renewal": 21714.0,
+    "transfer": 21714.0
+  }
+}

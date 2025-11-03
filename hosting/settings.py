@@ -136,3 +136,11 @@ LOGOUT_REDIRECT_URL = 'home'
 # Session Settings
 SESSION_COOKIE_AGE = 1209600  # 2 weeks in seconds
 SESSION_SAVE_EVERY_REQUEST = True
+
+# ConnectReseller API Settings
+CONNECTRESELLER_API_KEY = 'eTpim19KCTKwFIn'  
+CONNECTRESELLER_BASE_URL = 'https://api.connectreseller.com/ConnectReseller/ESHOP'
+
+# Currency and Pricing Settings
+USD_TO_NGN_RATE = 1500  # 1 USD = 1500 NGN
+DOMAIN_PROFIT_MARGIN = 0.10  # 10% profit margin
