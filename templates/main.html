@@ -43,49 +43,90 @@
     <!-- Dashboard Navigation -->
     <nav class="bg-gray-900 shadow-lg fixed w-full z-40 top-0">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-16">
-                <div class="flex items-center">
-                    <!-- Logo -->
-                    <div class="flex-shrink-0 flex items-center">
-                        <a href="{% url 'dashboard' %}" class="flex items-center">
-                            <img src="{% static 'images/hosting-logo.png' %}" alt="Hosting Nigeria Logo" class="h-8 w-auto">
+            <div class="flex items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="{% url 'dashboard' %}" class="flex items-center">
+                        <img src="{% static 'images/hosting-logo.png' %}" alt="Hosting Nigeria Logo" class="h-8 w-auto">
+                    </a>
+                </div>
+                
+                <!-- Dashboard Navigation Links -->
+                <div class="hidden md:flex md:flex-1 md:justify-center md:space-x-8">
+                        <a href="{% url 'dashboard' %}" class="{% if request.resolver_match.url_name == 'dashboard' %}text-white{% else %}text-gray-300 hover:text-white{% endif %} inline-flex items-center px-1 pt-1 text-sm font-medium transition duration-300">
+                            Dashboard
                         </a>
-                    </div>
-                    
-                    <!-- Dashboard Navigation Links -->
-                    <div class="hidden md:ml-6 md:flex md:space-x-8">
-                        <a href="{% url 'dashboard' %}" class="{% if request.resolver_match.url_name == 'dashboard' %}border-primary-500 text-white{% else %}border-transparent text-gray-300 hover:text-white hover:border-gray-300{% endif %} inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium transition duration-300">
-                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
-                            </svg>
-                            Overview
-                        </a>
-                        <a href="{% url 'products_services' %}" class="{% if request.resolver_match.url_name == 'products_services' %}border-primary-500 text-white{% else %}border-transparent text-gray-300 hover:text-white hover:border-gray-300{% endif %} inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium transition duration-300">
-                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
-                            </svg>
-                            Services
-                        </a>
-                        <a href="{% url 'my_domains' %}" class="{% if request.resolver_match.url_name == 'my_domains' %}border-primary-500 text-white{% else %}border-transparent text-gray-300 hover:text-white hover:border-gray-300{% endif %} inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium transition duration-300">
-                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9c0 5-4 9-9 9s-9-4-9-9 4-9 9-9 9 4 9 9z"></path>
-                            </svg>
-                            Domains
-                        </a>
-                        <a href="{% url 'invoices' %}" class="{% if request.resolver_match.url_name == 'invoices' %}border-primary-500 text-white{% else %}border-transparent text-gray-300 hover:text-white hover:border-gray-300{% endif %} inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium transition duration-300">
-                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
-                            </svg>
-                            Invoices
-                        </a>
-                        <a href="{% url 'support_tickets' %}" class="{% if request.resolver_match.url_name == 'support_tickets' %}border-primary-500 text-white{% else %}border-transparent text-gray-300 hover:text-white hover:border-gray-300{% endif %} inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium transition duration-300">
-                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 5v2m0 4v2m0 4v2M5 5a2 2 0 00-2 2v3a2 2 0 110 4v3a2 2 0 002 2h14a2 2 0 002-2v-3a2 2 0 110-4V7a2 2 0 00-2-2H5z"></path>
-                            </svg>
+                        
+                        <!-- Hosting Dropdown -->
+                        <div class="relative" x-data="{ open: false }">
+                            <button @click="open = !open" class="text-gray-300 hover:text-white inline-flex items-center px-1 pt-1 text-sm font-medium transition duration-300">
+                                Hosting
+                                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </button>
+                            <div x-show="open" @click.away="open = false" x-transition class="absolute z-50 mt-2 w-56 bg-white rounded-md shadow-lg py-1">
+                                <a href="{% url 'products_services' %}" class="flex items-center justify-between px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                                    <span class="flex items-center">
+                                        <svg class="w-4 h-4 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
+                                        </svg>
+                                        My Services
+                                    </span>
+                                    <span class="bg-green-500 text-white text-xs font-medium px-2 py-1 rounded-full">3</span>
+                                </a>
+                                
+                                <div class="border-t border-gray-100 my-1"></div>
+                                
+                                <a href="{% url 'web_hosting' %}" class="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                                    <svg class="w-4 h-4 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                                    </svg>
+                                    Buy New Hosting
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!-- Domain Dropdown -->
+                        <div class="relative" x-data="{ open: false }">
+                            <button @click="open = !open" class="text-gray-300 hover:text-white inline-flex items-center px-1 pt-1 text-sm font-medium transition duration-300">
+                                Domain
+                                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </button>
+                            <div x-show="open" @click.away="open = false" x-transition class="absolute z-50 mt-2 w-56 bg-white rounded-md shadow-lg py-1">
+                                <a href="{% url 'my_domains' %}" class="flex items-center justify-between px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                                    <span class="flex items-center">
+                                        <svg class="w-4 h-4 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9c0 5-4 9-9 9s-9-4-9-9 4-9 9-9 9 4 9 9z"></path>
+                                        </svg>
+                                        My Domains
+                                    </span>
+                                    <span class="bg-green-500 text-white text-xs font-medium px-2 py-1 rounded-full">5</span>
+                                </a>
+                                
+                                <div class="border-t border-gray-100 my-1"></div>
+                                
+                                <a href="{% url 'register_domain' %}" class="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                                    <svg class="w-4 h-4 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                                    </svg>
+                                    Register Domain
+                                </a>
+                                <a href="{% url 'transfer_domain' %}" class="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                                    <svg class="w-4 h-4 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"></path>
+                                    </svg>
+                                    Domain Transfer
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <a href="{% url 'support_tickets' %}" class="{% if request.resolver_match.url_name == 'support_tickets' %}text-white{% else %}text-gray-300 hover:text-white{% endif %} inline-flex items-center px-1 pt-1 text-sm font-medium transition duration-300">
                             Support
                         </a>
                     </div>
-                </div>
 
                 <!-- Right side navigation -->
                 <div class="hidden md:flex items-center space-x-4">
@@ -162,29 +203,70 @@
                     <svg class="w-4 h-4 mr-2 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
                     </svg>
-                    Overview
+                    Dashboard
                 </a>
-                <a href="{% url 'products_services' %}" class="{% if request.resolver_match.url_name == 'products_services' %}bg-gray-900 text-white{% else %}text-gray-300 hover:bg-gray-700 hover:text-white{% endif %} block px-3 py-2 rounded-md text-base font-medium transition duration-300">
+                
+                <!-- Hosting Mobile Section -->
+                <div class="border-t border-gray-700 pt-2 mt-2">
+                    <div class="px-3 py-2 text-xs font-semibold text-gray-400 uppercase tracking-wider">Hosting</div>
+                    <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium transition duration-300">
+                        <svg class="w-4 h-4 mr-2 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
+                        </svg>
+                        Shared Hosting
+                    </a>
+                    <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium transition duration-300">
+                        <svg class="w-4 h-4 mr-2 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"></path>
+                        </svg>
+                        VPS Hosting
+                    </a>
+                    <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium transition duration-300">
+                        <svg class="w-4 h-4 mr-2 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h6a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h6a2 2 0 002-2v-4a2 2 0 00-2-2m8-8V6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                        </svg>
+                        Dedicated Server
+                    </a>
+                    <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium transition duration-300">
+                        <svg class="w-4 h-4 mr-2 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"></path>
+                        </svg>
+                        Cloud Hosting
+                    </a>
+                </div>
+                
+                <!-- Domain Mobile Section -->
+                <div class="border-t border-gray-700 pt-2 mt-2">
+                    <div class="px-3 py-2 text-xs font-semibold text-gray-400 uppercase tracking-wider">Domain</div>
+                    <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium transition duration-300">
+                        <svg class="w-4 h-4 mr-2 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                        </svg>
+                        Domain Search
+                    </a>
+                    <a href="{% url 'my_domains' %}" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium transition duration-300">
+                        <svg class="w-4 h-4 mr-2 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
+                        </svg>
+                        My Domains
+                    </a>
+                    <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium transition duration-300">
+                        <svg class="w-4 h-4 mr-2 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"></path>
+                        </svg>
+                        Domain Transfer
+                    </a>
+                    <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium transition duration-300">
+                        <svg class="w-4 h-4 mr-2 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                        Domain Pricing
+                    </a>
+                </div>
+                
+                <a href="{% url 'support_tickets' %}" class="{% if request.resolver_match.url_name == 'support_tickets' %}bg-gray-900 text-white{% else %}text-gray-300 hover:bg-gray-700 hover:text-white{% endif %} block px-3 py-2 rounded-md text-base font-medium transition duration-300 border-t border-gray-700 mt-2 pt-2">
                     <svg class="w-4 h-4 mr-2 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
-                    </svg>
-                    Services
-                </a>
-                <a href="{% url 'my_domains' %}" class="{% if request.resolver_match.url_name == 'my_domains' %}bg-gray-900 text-white{% else %}text-gray-300 hover:bg-gray-700 hover:text-white{% endif %} block px-3 py-2 rounded-md text-base font-medium transition duration-300">
-                    <svg class="w-4 h-4 mr-2 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9c0 5-4 9-9 9s-9-4-9-9 4-9 9-9 9 4 9 9z"></path>
-                    </svg>
-                    Domains
-                </a>
-                <a href="{% url 'invoices' %}" class="{% if request.resolver_match.url_name == 'invoices' %}bg-gray-900 text-white{% else %}text-gray-300 hover:bg-gray-700 hover:text-white{% endif %} block px-3 py-2 rounded-md text-base font-medium transition duration-300">
-                    <svg class="w-4 h-4 mr-2 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
-                    </svg>
-                    Invoices
-                </a>
-                <a href="{% url 'support_tickets' %}" class="{% if request.resolver_match.url_name == 'support_tickets' %}bg-gray-900 text-white{% else %}text-gray-300 hover:bg-gray-700 hover:text-white{% endif %} block px-3 py-2 rounded-md text-base font-medium transition duration-300">
-                    <svg class="w-4 h-4 mr-2 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 5v2m0 4v2m0 4v2M5 5a2 2 0 00-2 2v3a2 2 0 110 4v3a2 2 0 002 2h14a2 2 0 002-2v-3a2 2 0 110-4V7a2 2 0 00-2-2H5z"></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                     </svg>
                     Support
                 </a>
@@ -206,8 +288,7 @@
                         <a href="{% url 'user_management' %}" class="block px-3 py-2 text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 transition duration-300">User Management</a>
                         <a href="{% url 'account_security' %}" class="block px-3 py-2 text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 transition duration-300">Account Security</a>
                         <a href="{% url 'email_history' %}" class="block px-3 py-2 text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 transition duration-300">Email History</a>
-                        <a href="{% url 'home' %}" class="block px-3 py-2 text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 transition duration-300">Back to Website</a>
-                        <a href="{% url 'logout' %}" class="block px-3 py-2 text-base font-medium text-red-400 hover:text-red-300 hover:bg-gray-700 transition duration-300">Sign Out</a>
+                        <a href="{% url 'logout' %}" class="block px-3 py-2 text-base font-medium text-red-400 hover:text-red-300 hover:bg-gray-700 transition duration-300">Logout</a>
                     </div>
                 {% endif %}
             </div>

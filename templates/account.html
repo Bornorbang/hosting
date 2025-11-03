@@ -39,120 +39,122 @@
             <div x-data="{ activeTab: 'account-details' }">
                 <!-- Account Details Tab -->
                 <div x-show="activeTab === 'account-details'" class="space-y-6">
-                    <div class="bg-white rounded-lg shadow-sm border border-gray-200">
-                        <!-- Personal Information -->
-                        <div class="px-6 py-4 border-b border-gray-200">
-                            <h3 class="text-lg font-medium text-gray-900">Personal Information</h3>
-                            <p class="mt-1 text-sm text-gray-600">Update your personal details and contact information.</p>
-                        </div>
-                        <div class="px-6 py-6">
-                            <form class="space-y-6">
-                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <form method="POST" action="{% url 'account' %}" class="space-y-6">
+                        {% csrf_token %}
+                        <div class="bg-white rounded-lg shadow-sm border border-gray-200">
+                            <!-- Personal Information -->
+                            <div class="px-6 py-4 border-b border-gray-200">
+                                <h3 class="text-lg font-medium text-gray-900">Personal Information</h3>
+                                <p class="mt-1 text-sm text-gray-600">Update your personal details and contact information.</p>
+                            </div>
+                            <div class="px-6 py-6">
+                                <div class="space-y-6">
+                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                        <div>
+                                            <label for="first_name" class="block text-sm font-medium text-gray-700">First Name</label>
+                                            <input type="text" id="first_name" name="first_name" value="{{ user.first_name }}" 
+                                                   class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary-500 focus:border-primary-500">
+                                        </div>
+                                        <div>
+                                            <label for="last_name" class="block text-sm font-medium text-gray-700">Last Name</label>
+                                            <input type="text" id="last_name" name="last_name" value="{{ user.last_name }}" 
+                                                   class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary-500 focus:border-primary-500">
+                                        </div>
+                                    </div>
                                     <div>
-                                        <label for="first_name" class="block text-sm font-medium text-gray-700">First Name</label>
-                                        <input type="text" id="first_name" name="first_name" value="{{ user.first_name }}" 
+                                        <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
+                                        <input type="email" id="email" name="email" value="{{ user.email }}" 
                                                class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary-500 focus:border-primary-500">
                                     </div>
                                     <div>
-                                        <label for="last_name" class="block text-sm font-medium text-gray-700">Last Name</label>
-                                        <input type="text" id="last_name" name="last_name" value="{{ user.last_name }}" 
+                                        <label for="phone" class="block text-sm font-medium text-gray-700">Phone Number</label>
+                                        <input type="tel" id="phone" name="phone" value="{{ user.profile.phone }}" placeholder="+234 800 000 0000" 
                                                class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary-500 focus:border-primary-500">
                                     </div>
                                 </div>
-                                <div>
-                                    <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
-                                    <input type="email" id="email" name="email" value="{{ user.email }}" 
-                                           class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary-500 focus:border-primary-500">
-                                </div>
-                                <div>
-                                    <label for="phone" class="block text-sm font-medium text-gray-700">Phone Number</label>
-                                    <input type="tel" id="phone" name="phone" placeholder="+234 800 000 0000" 
-                                           class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary-500 focus:border-primary-500">
-                                </div>
-                            </form>
+                            </div>
                         </div>
-                    </div>
 
-                    <!-- Billing Address -->
-                    <div class="bg-white rounded-lg shadow-sm border border-gray-200">
-                        <div class="px-6 py-4 border-b border-gray-200">
-                            <h3 class="text-lg font-medium text-gray-900">Billing Address</h3>
-                            <p class="mt-1 text-sm text-gray-600">This address will be used for billing and invoicing purposes.</p>
-                        </div>
-                        <div class="px-6 py-6">
-                            <form class="space-y-6">
-                                <div>
-                                    <label for="company" class="block text-sm font-medium text-gray-700">Company (Optional)</label>
-                                    <input type="text" id="company" name="company" 
-                                           class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary-500 focus:border-primary-500">
-                                </div>
-                                <div>
-                                    <label for="address" class="block text-sm font-medium text-gray-700">Street Address</label>
-                                    <input type="text" id="address" name="address" 
-                                           class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary-500 focus:border-primary-500">
-                                </div>
-                                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <!-- Billing Address -->
+                        <div class="bg-white rounded-lg shadow-sm border border-gray-200">
+                            <div class="px-6 py-4 border-b border-gray-200">
+                                <h3 class="text-lg font-medium text-gray-900">Billing Address</h3>
+                                <p class="mt-1 text-sm text-gray-600">This address will be used for billing and invoicing purposes.</p>
+                            </div>
+                            <div class="px-6 py-6">
+                                <div class="space-y-6">
                                     <div>
-                                        <label for="city" class="block text-sm font-medium text-gray-700">City</label>
-                                        <input type="text" id="city" name="city" 
+                                        <label for="company" class="block text-sm font-medium text-gray-700">Company (Optional)</label>
+                                        <input type="text" id="company" name="company" value="{{ user.profile.company }}"
                                                class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary-500 focus:border-primary-500">
                                     </div>
                                     <div>
-                                        <label for="state" class="block text-sm font-medium text-gray-700">State</label>
-                                        <select id="state" name="state" 
+                                        <label for="address" class="block text-sm font-medium text-gray-700">Street Address</label>
+                                        <input type="text" id="address" name="address" value="{{ user.profile.address }}"
+                                               class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary-500 focus:border-primary-500">
+                                    </div>
+                                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                                        <div>
+                                            <label for="city" class="block text-sm font-medium text-gray-700">City</label>
+                                            <input type="text" id="city" name="city" value="{{ user.profile.city }}"
+                                                   class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary-500 focus:border-primary-500">
+                                        </div>
+                                        <div>
+                                            <label for="state" class="block text-sm font-medium text-gray-700">State</label>
+                                            <select id="state" name="state" 
+                                                    class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary-500 focus:border-primary-500">
+                                                <option value="">Select State</option>
+                                                <option value="abia" {% if user.profile.state == 'abia' %}selected{% endif %}>Abia</option>
+                                                <option value="adamawa" {% if user.profile.state == 'adamawa' %}selected{% endif %}>Adamawa</option>
+                                                <option value="akwa-ibom" {% if user.profile.state == 'akwa-ibom' %}selected{% endif %}>Akwa Ibom</option>
+                                                <option value="anambra" {% if user.profile.state == 'anambra' %}selected{% endif %}>Anambra</option>
+                                                <option value="bauchi" {% if user.profile.state == 'bauchi' %}selected{% endif %}>Bauchi</option>
+                                                <option value="bayelsa" {% if user.profile.state == 'bayelsa' %}selected{% endif %}>Bayelsa</option>
+                                                <option value="benue" {% if user.profile.state == 'benue' %}selected{% endif %}>Benue</option>
+                                                <option value="borno" {% if user.profile.state == 'borno' %}selected{% endif %}>Borno</option>
+                                                <option value="cross-river" {% if user.profile.state == 'cross-river' %}selected{% endif %}>Cross River</option>
+                                                <option value="delta" {% if user.profile.state == 'delta' %}selected{% endif %}>Delta</option>
+                                                <option value="ebonyi" {% if user.profile.state == 'ebonyi' %}selected{% endif %}>Ebonyi</option>
+                                                <option value="edo" {% if user.profile.state == 'edo' %}selected{% endif %}>Edo</option>
+                                                <option value="ekiti" {% if user.profile.state == 'ekiti' %}selected{% endif %}>Ekiti</option>
+                                                <option value="enugu" {% if user.profile.state == 'enugu' %}selected{% endif %}>Enugu</option>
+                                                <option value="fct" {% if user.profile.state == 'fct' %}selected{% endif %}>FCT - Abuja</option>
+                                                <option value="gombe" {% if user.profile.state == 'gombe' %}selected{% endif %}>Gombe</option>
+                                                <option value="imo" {% if user.profile.state == 'imo' %}selected{% endif %}>Imo</option>
+                                                <option value="jigawa" {% if user.profile.state == 'jigawa' %}selected{% endif %}>Jigawa</option>
+                                                <option value="kaduna" {% if user.profile.state == 'kaduna' %}selected{% endif %}>Kaduna</option>
+                                                <option value="kano" {% if user.profile.state == 'kano' %}selected{% endif %}>Kano</option>
+                                                <option value="katsina" {% if user.profile.state == 'katsina' %}selected{% endif %}>Katsina</option>
+                                                <option value="kebbi" {% if user.profile.state == 'kebbi' %}selected{% endif %}>Kebbi</option>
+                                                <option value="kogi" {% if user.profile.state == 'kogi' %}selected{% endif %}>Kogi</option>
+                                                <option value="kwara" {% if user.profile.state == 'kwara' %}selected{% endif %}>Kwara</option>
+                                                <option value="lagos" {% if user.profile.state == 'lagos' %}selected{% endif %}>Lagos</option>
+                                                <option value="nasarawa" {% if user.profile.state == 'nasarawa' %}selected{% endif %}>Nasarawa</option>
+                                                <option value="niger" {% if user.profile.state == 'niger' %}selected{% endif %}>Niger</option>
+                                                <option value="ogun" {% if user.profile.state == 'ogun' %}selected{% endif %}>Ogun</option>
+                                                <option value="ondo" {% if user.profile.state == 'ondo' %}selected{% endif %}>Ondo</option>
+                                                <option value="osun" {% if user.profile.state == 'osun' %}selected{% endif %}>Osun</option>
+                                                <option value="oyo" {% if user.profile.state == 'oyo' %}selected{% endif %}>Oyo</option>
+                                                <option value="plateau" {% if user.profile.state == 'plateau' %}selected{% endif %}>Plateau</option>
+                                                <option value="rivers" {% if user.profile.state == 'rivers' %}selected{% endif %}>Rivers</option>
+                                                <option value="sokoto" {% if user.profile.state == 'sokoto' %}selected{% endif %}>Sokoto</option>
+                                                <option value="taraba" {% if user.profile.state == 'taraba' %}selected{% endif %}>Taraba</option>
+                                                <option value="yobe" {% if user.profile.state == 'yobe' %}selected{% endif %}>Yobe</option>
+                                                <option value="zamfara" {% if user.profile.state == 'zamfara' %}selected{% endif %}>Zamfara</option>
+                                            </select>
+                                        </div>
+                                        <div>
+                                            <label for="postal_code" class="block text-sm font-medium text-gray-700">Postal Code</label>
+                                            <input type="text" id="postal_code" name="postal_code" value="{{ user.profile.postal_code }}"
+                                                   class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary-500 focus:border-primary-500">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <label for="country" class="block text-sm font-medium text-gray-700">Country</label>
+                                        <select id="country" name="country" 
                                                 class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary-500 focus:border-primary-500">
-                                            <option value="">Select State</option>
-                                            <option value="abia">Abia</option>
-                                            <option value="adamawa">Adamawa</option>
-                                            <option value="akwa-ibom">Akwa Ibom</option>
-                                            <option value="anambra">Anambra</option>
-                                            <option value="bauchi">Bauchi</option>
-                                            <option value="bayelsa">Bayelsa</option>
-                                            <option value="benue">Benue</option>
-                                            <option value="borno">Borno</option>
-                                            <option value="cross-river">Cross River</option>
-                                            <option value="delta">Delta</option>
-                                            <option value="ebonyi">Ebonyi</option>
-                                            <option value="edo">Edo</option>
-                                            <option value="ekiti">Ekiti</option>
-                                            <option value="enugu">Enugu</option>
-                                            <option value="fct">FCT - Abuja</option>
-                                            <option value="gombe">Gombe</option>
-                                            <option value="imo">Imo</option>
-                                            <option value="jigawa">Jigawa</option>
-                                            <option value="kaduna">Kaduna</option>
-                                            <option value="kano">Kano</option>
-                                            <option value="katsina">Katsina</option>
-                                            <option value="kebbi">Kebbi</option>
-                                            <option value="kogi">Kogi</option>
-                                            <option value="kwara">Kwara</option>
-                                            <option value="lagos">Lagos</option>
-                                            <option value="nasarawa">Nasarawa</option>
-                                            <option value="niger">Niger</option>
-                                            <option value="ogun">Ogun</option>
-                                            <option value="ondo">Ondo</option>
-                                            <option value="osun">Osun</option>
-                                            <option value="oyo">Oyo</option>
-                                            <option value="plateau">Plateau</option>
-                                            <option value="rivers">Rivers</option>
-                                            <option value="sokoto">Sokoto</option>
-                                            <option value="taraba">Taraba</option>
-                                            <option value="yobe">Yobe</option>
-                                            <option value="zamfara">Zamfara</option>
-                                        </select>
-                                    </div>
-                                    <div>
-                                        <label for="postal_code" class="block text-sm font-medium text-gray-700">Postal Code</label>
-                                        <input type="text" id="postal_code" name="postal_code" 
-                                               class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary-500 focus:border-primary-500">
-                                    </div>
-                                </div>
-                                <div>
-                                    <label for="country" class="block text-sm font-medium text-gray-700">Country</label>
-                                    <select id="country" name="country" 
-                                            class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary-500 focus:border-primary-500">
-                                        <option value="">Select Country</option>
-                                        <option value="nigeria" selected>Nigeria</option>
+                                            <option value="">Select Country</option>
+                                            <option value="nigeria" {% if user.profile.country == 'nigeria' %}selected{% endif %}>Nigeria</option>
                                         
                                         <!-- African Countries -->
                                         <optgroup label="Africa">
@@ -281,19 +283,19 @@
                                         </optgroup>
                                     </select>
                                 </div>
-                            </form>
+                            </div>
                         </div>
-                    </div>
 
-                    <!-- Action Buttons -->
-                    <div class="flex justify-end space-x-4">
-                        <button type="button" class="px-6 py-2 border border-gray-300 rounded-md text-sm font-medium text-gray-700 hover:bg-gray-50 transition duration-300">
-                            Cancel Changes
-                        </button>
-                        <button type="submit" class="px-6 py-2 bg-primary-600 border border-transparent rounded-md text-sm font-medium text-white hover:bg-primary-700 transition duration-300">
-                            Save Changes
-                        </button>
-                    </div>
+                        <!-- Action Buttons -->
+                        <div class="flex justify-end space-x-4">
+                            <button type="button" class="px-6 py-2 border border-gray-300 rounded-md text-sm font-medium text-gray-700 hover:bg-gray-50 transition duration-300">
+                                Cancel Changes
+                            </button>
+                            <button type="submit" class="px-6 py-2 bg-primary-600 border border-transparent rounded-md text-sm font-medium text-white hover:bg-primary-700 transition duration-300">
+                                Save Changes
+                            </button>
+                        </div>
+                    </form>
                 </div>
 
                 <!-- User Management Tab -->

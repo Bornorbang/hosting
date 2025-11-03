@@ -46,19 +46,19 @@
                     <div class="space-y-3 mb-6">
                         <div>
                             <label class="block text-sm font-medium text-gray-700">Name</label>
-                            <p class="text-sm text-gray-900">John Doe</p>
+                            <p class="text-sm text-gray-900">{{ user.get_full_name|default:"Not provided" }}</p>
                         </div>
                         <div>
                             <label class="block text-sm font-medium text-gray-700">Email</label>
-                            <p class="text-sm text-gray-900">john.doe@example.com</p>
+                            <p class="text-sm text-gray-900">{{ user.email }}</p>
                         </div>
                         <div>
                             <label class="block text-sm font-medium text-gray-700">Phone</label>
-                            <p class="text-sm text-gray-900">+234 803 123 4567</p>
+                            <p class="text-sm text-gray-900">{{ user.profile.phone|default:"Not provided" }}</p>
                         </div>
                         <div>
                             <label class="block text-sm font-medium text-gray-700">Address</label>
-                            <p class="text-sm text-gray-900">123 Victoria Island<br>Lagos, Nigeria</p>
+                            <p class="text-sm text-gray-900">{{ user.profile.get_full_address|default:"Not provided" }}</p>
                         </div>
                         <div>
                             <label class="block text-sm font-medium text-gray-700">Account Status</label>
@@ -69,9 +69,9 @@
                     </div>
                     
                     <!-- Update Button -->
-                    <button class="w-full bg-primary-600 hover:bg-primary-700 text-white py-3 px-4 rounded-lg font-medium transition duration-200 text-sm shadow-md">
+                    <a href="{% url 'account' %}" class="w-full bg-primary-600 hover:bg-primary-700 text-white py-3 px-4 rounded-lg font-medium transition duration-200 text-sm shadow-md block text-center">
                         Update Information
-                    </button>
+                    </a>
                 </div>
 
                 <!-- Shortcuts Card -->

@@ -185,6 +185,30 @@ def refund_policy(request):
 
 @login_required
 def account(request):
+    if request.method == 'POST':
+        # Handle form submission
+        user = request.user
+        profile = user.profile
+        
+        # Update User model fields
+        user.first_name = request.POST.get('first_name', '')
+        user.last_name = request.POST.get('last_name', '')
+        user.email = request.POST.get('email', '')
+        user.save()
+        
+        # Update UserProfile fields
+        profile.phone = request.POST.get('phone', '')
+        profile.company = request.POST.get('company', '')
+        profile.address = request.POST.get('address', '')
+        profile.city = request.POST.get('city', '')
+        profile.state = request.POST.get('state', '')
+        profile.postal_code = request.POST.get('postal_code', '')
+        profile.country = request.POST.get('country', 'nigeria')
+        profile.save()
+        
+        messages.success(request, 'Your account information has been updated successfully!')
+        return redirect('account')
+    
     return render(request, 'account.html')
 
 @login_required
